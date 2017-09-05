@@ -14,5 +14,5 @@
 
 
 <ion-content>
-    <list-notification [items]="notification.items"></list-notification>
+    <list-notification [items]="notification.items" (click)="selectedItem()"></list-notification>
 </ion-content>

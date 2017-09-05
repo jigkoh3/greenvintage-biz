@@ -1,8 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, Slides } from 'ionic-angular';
-
-// import { LoginPage } from '../login/login';
-// import { SignupPage } from '../signup/signup';
+import { LoginPage } from "../login/login";
+import { RegisterPage } from "../register/register";
 
 @Component({
   selector: 'walkthrough-page',
@@ -33,10 +32,10 @@ export class WalkthroughPage {
   }
 
   goToLogin() {
-    // this.nav.push(LoginPage);
+    this.nav.push(LoginPage);
   }
 
   goToSignup() {
-    // this.nav.push(SignupPage);
+    this.nav.push(RegisterPage);
   }
 }

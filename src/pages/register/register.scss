@@ -1,0 +1,29 @@
+page-register {
+.signup-content
+	{
+		.legal-stuff
+		{
+			color: $white-d;
+			text-align: center;
+			margin: 10px 12px;
+
+			.legal-action
+			{
+				font-weight: 500;
+				color: $theme-color-2;
+			}
+		}
+	}
+
+	.mg-top {
+		margin-top: 26px;
+	}
+
+	.swiper-slide {
+		align-items: start;
+	}
+
+	.auth-content .scroll-content {
+		padding: 16px 7%;
+	}
+}

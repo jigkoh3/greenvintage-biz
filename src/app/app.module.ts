@@ -70,9 +70,14 @@ import { OrderPage } from '../pages/order/order';
 import { ProductPage } from '../pages/product/product';
 import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
+import { LoginPage } from "../pages/login/login";
+import { RegisterPage } from "../pages/register/register";
+import { LoginServiceProvider } from "../pages/login/login.service";
+import { RegisterServiceProvider } from "../pages/register/register.service";
 import { IonOrdersComponent } from '../components/ion-orders/ion-orders';
 import { ListOrderComponent } from '../components/list-order/list-order';
 import { SegmentOrderComponent } from '../components/segment-order/segment-order';
+
 
 import { ProductserviceProvider } from "../pages/product/product.service";
 import { ListItemsComponent } from "../components/list-items/list-items";
@@ -81,6 +86,7 @@ import { ProductDetailServiceProvider } from "../pages/product-detail/product-de
 import { NotificationServiceProvider } from "../pages/notification/notification.service";
 import { ListNotificationComponent } from "../components/list-notification/list-notification";
 import { OrderServiceProvider } from "../pages/order/order.service";
+import { ProfileServiceProvider } from '../pages/profile/profile.service';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -100,7 +106,8 @@ export function createTranslateLoader(http: Http) {
     FavoritePage,
     ProductDetailPage,
     ShopDetailPage,
-
+    LoginPage,
+    RegisterPage,
     PreloadImage,
     BackgroundImage,
     ShowHideContainer,
@@ -150,14 +157,17 @@ export function createTranslateLoader(http: Http) {
     CartPage,
     FavoritePage,
     ProductDetailPage,
-    ShopDetailPage
+    ShopDetailPage,
+    LoginPage,
+    RegisterPage
   ],
   providers: [
     HomeService,
     CartService,
     // GoogleMapsService,
 		LanguageService,
-
+    LoginServiceProvider,
+    RegisterServiceProvider,
 	  SplashScreen,
 	  StatusBar,
     SocialSharing,
@@ -176,7 +186,8 @@ export function createTranslateLoader(http: Http) {
     ProductserviceProvider,
     ProductDetailServiceProvider,
     NotificationServiceProvider,
-    OrderServiceProvider
+    OrderServiceProvider,
+    ProfileServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

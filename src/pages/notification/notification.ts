@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { NotificationServiceProvider } from "./notification.service";
 import { NotificationModel } from "./notification.model";
-
+import { ProductDetailPage } from '../product-detail/product-detail';
 /**
  * Generated class for the NotificationPage page.
  *
@@ -33,5 +33,7 @@ export class NotificationPage {
       this.notification = data;
     })
   }
-
+  selectedItem() {
+    this.navCtrl.push(ProductDetailPage);
+  }
 }
