@@ -6,17 +6,16 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Product</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Product</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
 <ion-content class="list-big-content">
-  <list-items [items]="productlistData.items" [showSearch]="true" [showToolbar]="true" (itemClicked)="selectedItem()"></list-items>
-  <ion-fab right bottom>
-    <button ion-fab><ion-icon name="add"></ion-icon></button>
-  </ion-fab>
+    <list-items [items]="productlistData.items" [showSearch]="true" [showToolbar]="true" (itemClicked)="selectedItem()"></list-items>
+    <ion-fab right bottom (click)="createProduct()">
+        <button ion-fab><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
 </ion-content>
-
