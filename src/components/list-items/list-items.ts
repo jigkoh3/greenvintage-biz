@@ -1,5 +1,4 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { LogServiceProvider } from '../../providers/log-service/log-service';
 /**
  * Generated class for the ListItemsComponent component.
  *

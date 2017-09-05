@@ -15,7 +15,6 @@
 
 <ion-content>
   <ion-orders [steps]="steps" [(channel)]="channel">
-    <segment-order></segment-order>
-    <!-- <list-order></list-order> -->
+    <segment-order [items]="orderlistData.items"></segment-order>
   </ion-orders>
 </ion-content>

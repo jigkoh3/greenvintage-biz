@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { IonOrdersComponent } from "../ion-orders/ion-orders";
 
 /**
@@ -14,6 +14,7 @@ import { IonOrdersComponent } from "../ion-orders/ion-orders";
 export class SegmentOrderComponent {
 
   text: string;
+  @Input() items: any;
 
   constructor(public parent: IonOrdersComponent) {
     console.log('Hello SegmentOrderComponent Component');
