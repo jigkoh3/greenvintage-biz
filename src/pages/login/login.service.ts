@@ -23,6 +23,7 @@ export class LoginServiceProvider {
       .then(response => {
         let user = response.json() as AuthorizeModel;
         window.localStorage.setItem('user', JSON.stringify(user));
+        console.log(user);
         return user;
       })
       .catch(this.handleError);
