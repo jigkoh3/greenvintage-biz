@@ -2,7 +2,7 @@
     "waiting": [
         {
             "docno": "DOC NO.002",
-            "name": "Crossfit WorldWide Event",
+            "name": "11Crossfit WorldWide Event",
             "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
             "price": 1800,
             "normalprice": 20000,
@@ -10,6 +10,7 @@
             "discounttype": "%",
             "currency": "THB",
             "qty": 5,
+            "status": "waiting",
             "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
         },
         {
@@ -22,13 +23,14 @@
             "discounttype": "%",
             "currency": "THB",
             "qty": 5,
+            "status": "waiting",
             "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
         }
     ],
     "accept": [
         {
             "docno": "DOC NO.002",
-            "name": "Crossfit WorldWide Event",
+            "name": "22Crossfit WorldWide Event",
             "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
             "price": 1800,
             "normalprice": 20000,
@@ -36,6 +38,7 @@
             "discounttype": "%",
             "currency": "THB",
             "qty": 5,
+            "status": "accept",
             "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
         },
         {
@@ -48,13 +51,14 @@
             "discounttype": "%",
             "currency": "THB",
             "qty": 5,
+            "status": "accept",
             "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
         }
     ],
     "unreceive": [
         {
             "docno": "DOC NO.002",
-            "name": "Crossfit WorldWide Event",
+            "name": "33Crossfit WorldWide Event",
             "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
             "price": 1800,
             "normalprice": 20000,
@@ -62,6 +66,7 @@
             "discounttype": "%",
             "currency": "THB",
             "qty": 5,
+            "status": "unreceive",
             "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
         },
         {
@@ -74,6 +79,7 @@
             "discounttype": "%",
             "currency": "THB",
             "qty": 5,
+            "status": "unreceive",
             "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
         }
     ]
