@@ -12,12 +12,10 @@ import { IonOrdersComponent } from "../ion-orders/ion-orders";
   templateUrl: 'list-order.html'
 })
 export class ListOrderComponent {
-
-  text: string;
+  @Input() items: any;
 
   constructor() {
     console.log('Hello ListOrderComponent Component');
-    this.text = 'Hello World';
   }
 
 }

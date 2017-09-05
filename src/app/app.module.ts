@@ -85,6 +85,7 @@ import { TopbarComponent } from "../components/topbar/topbar";
 import { ProductDetailServiceProvider } from "../pages/product-detail/product-detail.service";
 import { NotificationServiceProvider } from "../pages/notification/notification.service";
 import { ListNotificationComponent } from "../components/list-notification/list-notification";
+import { OrderServiceProvider } from "../pages/order/order.service";
 import { ProfileServiceProvider } from '../pages/profile/profile.service';
 
 export function createTranslateLoader(http: Http) {
@@ -185,6 +186,7 @@ export function createTranslateLoader(http: Http) {
     ProductserviceProvider,
     ProductDetailServiceProvider,
     NotificationServiceProvider,
+    OrderServiceProvider,
     ProfileServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
