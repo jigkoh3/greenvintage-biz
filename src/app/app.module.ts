@@ -72,6 +72,8 @@ import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
 import { ProductserviceProvider } from "../pages/product/product.service";
 import { ListItemsComponent } from "../components/list-items/list-items";
+import { NotificationServiceProvider } from "../pages/notification/notification.service";
+import { ListNotificationComponent } from "../components/list-notification/list-notification";
 
 
 
@@ -107,7 +109,8 @@ export function createTranslateLoader(http: Http) {
     ListGridComponent,
     AdsHeaderBarComponent,
     TestComponent,
-    ListItemsComponent
+    ListItemsComponent,
+    ListNotificationComponent
     
   ],
   imports: [
@@ -162,7 +165,8 @@ export function createTranslateLoader(http: Http) {
 		ImagePicker,
 		Crop,
 		EmailComposer,
-    ProductserviceProvider
+    ProductserviceProvider,
+    NotificationServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
