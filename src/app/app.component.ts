@@ -7,9 +7,8 @@ import { Observable } from 'rxjs/Observable';
 // import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
 import { HomePage } from "../pages/home/home";
-
+import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
-import { TabsNavigationPage } from "../pages/tabs-navigation/tabs-navigation";
 
 
 @Component({

@@ -6,7 +6,6 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { Http } from '@angular/http';
 
 import { WalkthroughPage } from '../pages/walkthrough/walkthrough';
-import { HomePage } from "../pages/home/home";
 
 
 import { PreloadImage } from '../components/preload-image/preload-image';
@@ -16,7 +15,7 @@ import { ShowHideInput } from '../components/show-hide-password/show-hide-input'
 import { ColorRadio } from '../components/color-radio/color-radio';
 import { CounterInput } from '../components/counter-input/counter-input';
 import { Rating } from '../components/rating/rating';
-import { GoogleMap } from '../components/google-map/google-map';
+// import { GoogleMap } from '../components/google-map/google-map';
 
 // import { FacebookLoginService } from '../pages/facebook-login/facebook-login.service';
 // import { GoogleLoginService } from '../pages/google-login/google-login.service';
@@ -55,10 +54,8 @@ import { VideoPlayerModule } from '../components/video-player/video-player.modul
 import { ValidatorsModule } from '../components/validators/validators.module';
 
 import { LanguageService } from '../providers/language/language.service';
-import { TabsNavigationPage } from "../pages/tabs-navigation/tabs-navigation";
 import { SearchPage } from "../pages/search/search";
 import { CartPage } from "../pages/cart/cart";
-import { ProfilePage } from "../pages/profile/profile";
 import { FavoritePage } from "../pages/favorite/favorite";
 import { ListScollXComponent } from '../components/list-scoll-x/list-scoll-x';
 import { ListGridComponent } from '../components/list-grid/list-grid';
@@ -68,6 +65,12 @@ import { ProductDetailPage } from "../pages/product-detail/product-detail";
 import { ShopDetailPage } from "../pages/shop-detail/shop-detail";
 import { TestComponent } from '../components/test/test';
 import { CartService } from "../pages/cart/cart.service";
+import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
+import { HomePage } from '../pages/home/home';
+import { OrderPage } from '../pages/order/order';
+import { ProductPage } from '../pages/product/product';
+import { NotificationPage } from '../pages/notification/notification';
+import { ProfilePage } from '../pages/profile/profile';
 
 
 export function createTranslateLoader(http: Http) {
@@ -79,11 +82,13 @@ export function createTranslateLoader(http: Http) {
   declarations: [
     MyApp,
     WalkthroughPage,
-    TabsNavigationPage,
     HomePage,
+    OrderPage,
+    ProductPage,
+    NotificationPage,
+    ProfilePage,
     SearchPage,
     CartPage,
-    ProfilePage,
     FavoritePage,
     ProductDetailPage,
     ShopDetailPage,
@@ -95,7 +100,8 @@ export function createTranslateLoader(http: Http) {
     ColorRadio,
     CounterInput,
     Rating,
-    GoogleMap,
+    TabsNavigationPage,
+    // GoogleMap,
     ListScollXComponent,
     ListGridComponent,
     AdsHeaderBarComponent,
@@ -118,12 +124,15 @@ export function createTranslateLoader(http: Http) {
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    WalkthroughPage,
     TabsNavigationPage,
+    WalkthroughPage,
     HomePage,
+    OrderPage,
+    ProductPage,
+    NotificationPage,
+    ProfilePage,
     SearchPage,
     CartPage,
-    ProfilePage,
     FavoritePage,
     ProductDetailPage,
     ShopDetailPage

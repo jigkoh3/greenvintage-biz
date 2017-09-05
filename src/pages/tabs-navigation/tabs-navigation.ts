@@ -1,27 +1,31 @@
 import { Component } from '@angular/core';
-import { HomePage } from "../home/home";
-import { SearchPage } from "../search/search";
-import { CartPage } from "../cart/cart";
-import { ProfilePage } from "../profile/profile";
-import { FavoritePage } from "../favorite/favorite";
+import { IonicPage, NavController } from 'ionic-angular';
+import { HomePage } from '../home/home';
+import { OrderPage } from '../order/order';
+import { ProductPage } from '../product/product';
+import { NotificationPage } from '../notification/notification';
+import { ProfilePage } from '../profile/profile';
 
-
+/**
+ * Generated class for the TabsNavigationPage tabs.
+ *
+ * See https://angular.io/docs/ts/latest/guide/dependency-injection.html for
+ * more info on providers and Angular DI.
+ */
 @Component({
-  selector: 'tabs-navigation',
+  selector: 'page-tabs-navigation',
   templateUrl: 'tabs-navigation.html'
 })
+@IonicPage()
 export class TabsNavigationPage {
-  tab1Root: any;
-  tab2Root: any;
-  tab3Root: any;
-  tab4Root: any;
-  tab5Root: any;
 
-  constructor() {
-    this.tab1Root = HomePage;
-    this.tab2Root = SearchPage;
-    this.tab3Root = CartPage;
-    this.tab4Root = FavoritePage;
-    this.tab5Root = ProfilePage;
-  }
+  homeRoot = HomePage
+  orderRoot = OrderPage
+  productRoot = ProductPage
+  notificationRoot = NotificationPage
+  profileRoot = ProfilePage
+
+
+  constructor(public navCtrl: NavController) {}
+
 }
