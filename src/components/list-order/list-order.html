@@ -1,6 +1,6 @@
 <ion-list text-left>
   <!-- <button ion-item *ngFor="let item of items" (click)="onClick(item)"> -->
-  <button ion-item *ngFor="let item of items">
+  <button ion-item *ngFor="let item of items" (click)="selectOrder()">
                 <ion-row>
                   <ion-col no-padding width-33 class="magin-right-10-custom">
                     <preload-image [ratio]="{w:1, h:1}" [src]="item.image"></preload-image>

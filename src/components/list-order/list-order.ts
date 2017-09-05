@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { IonOrdersComponent } from "../ion-orders/ion-orders";
-
+import { OrderDetailPage } from "../../pages/order-detail/order-detail";
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 /**
  * Generated class for the ListOrderComponent component.
  *
@@ -14,8 +15,10 @@ import { IonOrdersComponent } from "../ion-orders/ion-orders";
 export class ListOrderComponent {
   @Input() items: any;
 
-  constructor() {
+  constructor(public navCtrl: NavController) {
     console.log('Hello ListOrderComponent Component');
   }
-
+  selectOrder() {
+    this.navCtrl.push(OrderDetailPage);
+  }
 }

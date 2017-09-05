@@ -15,16 +15,16 @@ import { OrderDetailModel } from "./order-detail.model";
   templateUrl: 'order-detail.html',
 })
 export class OrderDetailPage {
-  productdetailData: OrderDetailModel = new OrderDetailModel;
+  orderdetailData: OrderDetailModel = new OrderDetailModel;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams , public orderdetailserviceProvider:OrderdetailserviceProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderDetailPage');
-    this.orderdetailserviceProvider.getData().then(data =>{
-this.productdetailData = data;
-console.log(data);
+    this.orderdetailserviceProvider.getData().then(data => {
+      this.orderdetailData = data;
+      console.log(data);
     })
   }
 

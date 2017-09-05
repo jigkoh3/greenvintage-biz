@@ -19,7 +19,7 @@ export class Product {
     category: string;
     created: string;
     name: string;
-    price: number;
+    unitprice: number;
     sellerSummary: string;
     shop: string;
     user: string;

@@ -27,7 +27,7 @@
               }
             ],
             "name": "Productmaster name",
-            "price": 1234,
+            "unitprice": 1234,
             "sellerSummary": 0,
             "sellerlog": [],
             "shippings": [
