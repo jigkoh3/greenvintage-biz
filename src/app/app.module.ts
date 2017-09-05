@@ -74,7 +74,8 @@ import { ProductserviceProvider } from "../pages/product/product.service";
 import { ListItemsComponent } from "../components/list-items/list-items";
 import { TopbarComponent } from "../components/topbar/topbar";
 import { ProductDetailServiceProvider } from "../pages/product-detail/product-detail.service";
-
+import { NotificationServiceProvider } from "../pages/notification/notification.service";
+import { ListNotificationComponent } from "../components/list-notification/list-notification";
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -109,7 +110,8 @@ export function createTranslateLoader(http: Http) {
     ListGridComponent,
     AdsHeaderBarComponent,
     TestComponent,
-    ListItemsComponent
+    ListItemsComponent,
+    ListNotificationComponent
     
   ],
   imports: [
@@ -165,8 +167,8 @@ export function createTranslateLoader(http: Http) {
 		Crop,
 		EmailComposer,
     ProductserviceProvider,
-    ProductDetailServiceProvider
-    
+    ProductDetailServiceProvider,
+    NotificationServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
