@@ -1,0 +1,48 @@
+{
+      "amount": 1234,
+      "cart": "59ae70a7f5fa077815002219",
+      "discount": 234,
+      "items": [
+        {
+          "amount": 1234,
+          "delivery": {
+            "_id": "59ae70a7f5fa077815002214",
+            "created": "2017-09-05T09:38:47.952Z",
+            "days": 7,
+            "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+            "name": "ส่งธรรมดา",
+            "price": 0,
+            "user": "59ae70a7f5fa077815002213"
+          },
+          "product": {
+            "_id": "59ae70a7f5fa077815002216",
+            "category":"59ae70a7f5fa077815002215",
+            "created": "2017-09-05T09:38:47.953Z",
+            "favorite": [],
+            "historylog": [],
+            "image": [
+              {
+                "_id": "59ae70a7f5fa077815002218",
+                "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg"
+              }
+            ],
+            "name": "Productmaster name",
+            "price": 1234,
+            "sellerSummary": 0,
+            "sellerlog": [],
+            "shippings": [
+              {
+                "_id": "59ae70a7f5fa077815002217",
+                "shipping": "59ae70a7f5fa077815002214"
+              }
+            ],
+            "shop": "59ae70a7f5fa077815002211",
+            "user": "59ae70a7f5fa077815002213"
+          },
+          "qty": 1,
+          "size": "S",
+          "status": "waiting"
+        }
+      ],
+      "payment": { "counterservice": "7-11", "paymenttype": "Counterservice"}
+}
