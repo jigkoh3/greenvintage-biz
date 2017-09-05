@@ -90,8 +90,8 @@ import { ProfileServiceProvider } from '../pages/profile/profile.service';
 import { OrderDetailPage } from "../pages/order-detail/order-detail";
 import { OrderdetailserviceProvider } from "../pages/order-detail/order-detail.service";
 
-
-
+import { CreateProductPage } from "../pages/create-product/create-product";
+import { FormProductComponent } from '../components/form-product/form-product';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -131,7 +131,9 @@ export function createTranslateLoader(http: Http) {
     ListOrderComponent,
     SegmentOrderComponent,
     ListItemsComponent,
-    ListNotificationComponent
+    ListNotificationComponent,
+    CreateProductPage,
+    FormProductComponent
     
   ],
   imports: [
@@ -166,7 +168,8 @@ export function createTranslateLoader(http: Http) {
     ShopDetailPage,
     LoginPage,
     RegisterPage,
-    OrderDetailPage
+    OrderDetailPage,
+    CreateProductPage
   ],
   providers: [
     HomeService,

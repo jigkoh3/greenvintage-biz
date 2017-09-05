@@ -11,7 +11,7 @@ export class HomeService {
   constructor(public http: Http) {}
 
   getData(): Promise<HomeModel> {
-    return this.http.get('./assets/example_data/home.json')
+    return this.http.get('./assets/example_data/order.json')
      .toPromise()
      .then(response => response.json() as HomeModel)
      .catch(this.handleError);
