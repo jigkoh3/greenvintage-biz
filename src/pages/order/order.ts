@@ -25,7 +25,7 @@ export class OrderPage {
     },
     {
       value: 3,
-      title: "Unpaid"
+      title: "Unreceived"
     }
   ];
 

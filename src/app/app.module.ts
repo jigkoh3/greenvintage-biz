@@ -72,6 +72,8 @@ import { ProductPage } from '../pages/product/product';
 import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
 import { IonOrdersComponent } from '../components/ion-orders/ion-orders';
+import { ListOrderComponent } from '../components/list-order/list-order';
+import { SegmentOrderComponent } from '../components/segment-order/segment-order';
 
 
 export function createTranslateLoader(http: Http) {
@@ -107,7 +109,9 @@ export function createTranslateLoader(http: Http) {
     ListGridComponent,
     AdsHeaderBarComponent,
     TestComponent,
-    IonOrdersComponent
+    IonOrdersComponent,
+    ListOrderComponent,
+    SegmentOrderComponent
   ],
   imports: [
     BrowserModule,
