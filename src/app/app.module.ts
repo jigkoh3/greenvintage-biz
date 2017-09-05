@@ -70,6 +70,10 @@ import { OrderPage } from '../pages/order/order';
 import { ProductPage } from '../pages/product/product';
 import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
+import { IonOrdersComponent } from '../components/ion-orders/ion-orders';
+import { ListOrderComponent } from '../components/list-order/list-order';
+import { SegmentOrderComponent } from '../components/segment-order/segment-order';
+
 import { ProductserviceProvider } from "../pages/product/product.service";
 import { ListItemsComponent } from "../components/list-items/list-items";
 import { TopbarComponent } from "../components/topbar/topbar";
@@ -81,7 +85,6 @@ import { ProfileServiceProvider } from '../pages/profile/profile.service';
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-
 
 @NgModule({
   declarations: [
@@ -111,6 +114,9 @@ export function createTranslateLoader(http: Http) {
     ListGridComponent,
     AdsHeaderBarComponent,
     TestComponent,
+    IonOrdersComponent,
+    ListOrderComponent,
+    SegmentOrderComponent,
     ListItemsComponent,
     ListNotificationComponent
     
