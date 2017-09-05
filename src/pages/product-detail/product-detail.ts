@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
+import { ProductDetailModel } from '../product-detail/product-detail.model';
+import { ProductDetailServiceProvider } from '../product-detail/product-detail.service';
+import { CartPage } from '../cart/cart';
+import { SocialSharing } from "@ionic-native/social-sharing";
 /**
  * Generated class for the ProductDetailPage page.
  *
@@ -12,17 +15,37 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'product-detail.html',
 })
 export class ProductDetailPage {
-  private product: any;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  product: any;
+  productdetailData: ProductDetailModel = new ProductDetailModel;
+  constructor(private socialSharing: SocialSharing, public navCtrl: NavController, public navParams: NavParams, public productDetailService: ProductDetailServiceProvider) {
     this.product = navParams.get('title');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductDetailPage');
+    this.getProductdetailData();
+  }
+  getProductdetailData() {
+    this.productDetailService
+      .getProductDetail()
+      .then((data) => {
+        this.productdetailData = data;
+        console.log(this.productdetailData);
+      }, (err) => {
+        console.log(err);
+      });
+  }
+  addToCart() {
+    alert('thank you');
+    this.navCtrl.push(CartPage);
   }
 
-  addToCart(){
-    alert('thank you');
+  socialShare() {
+    this.socialSharing.share('ทดสอบการแชร์จากแอป', 'แชร์ๆๆๆ', null, 'https://assets.wired.com/photos/w_1534/wp-content/uploads/2016/09/ff_nike-hyperadapt_angle_front.jpg').then(data => {
+      alert('share success');
+    }).catch(err => {
+      alert(err);
+    });
   }
 
 }

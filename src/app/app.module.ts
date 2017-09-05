@@ -14,9 +14,8 @@ import { ShowHideContainer } from '../components/show-hide-password/show-hide-co
 import { ShowHideInput } from '../components/show-hide-password/show-hide-input';
 import { ColorRadio } from '../components/color-radio/color-radio';
 import { CounterInput } from '../components/counter-input/counter-input';
-import { Rating } from '../components/rating/rating';
 // import { GoogleMap } from '../components/google-map/google-map';
-
+import { Ionic2RatingModule } from 'ionic2-rating';
 // import { FacebookLoginService } from '../pages/facebook-login/facebook-login.service';
 // import { GoogleLoginService } from '../pages/google-login/google-login.service';
 // import { TwitterLoginService } from '../pages/twitter-login/twitter-login.service';
@@ -75,12 +74,22 @@ import { LoginPage } from "../pages/login/login";
 import { RegisterPage } from "../pages/register/register";
 import { LoginServiceProvider } from "../pages/login/login.service";
 import { RegisterServiceProvider } from "../pages/register/register.service";
+import { IonOrdersComponent } from '../components/ion-orders/ion-orders';
+import { ListOrderComponent } from '../components/list-order/list-order';
+import { SegmentOrderComponent } from '../components/segment-order/segment-order';
 
+
+import { ProductserviceProvider } from "../pages/product/product.service";
+import { ListItemsComponent } from "../components/list-items/list-items";
+import { TopbarComponent } from "../components/topbar/topbar";
+import { ProductDetailServiceProvider } from "../pages/product-detail/product-detail.service";
+import { NotificationServiceProvider } from "../pages/notification/notification.service";
+import { ListNotificationComponent } from "../components/list-notification/list-notification";
+import { ProfileServiceProvider } from '../pages/profile/profile.service';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
-
 
 @NgModule({
   declarations: [
@@ -104,18 +113,25 @@ export function createTranslateLoader(http: Http) {
     ShowHideInput,
     ColorRadio,
     CounterInput,
-    Rating,
     TabsNavigationPage,
     // GoogleMap,
     ListScollXComponent,
+    TopbarComponent,
     ListGridComponent,
     AdsHeaderBarComponent,
-    TestComponent
+    TestComponent,
+    IonOrdersComponent,
+    ListOrderComponent,
+    SegmentOrderComponent,
+    ListItemsComponent,
+    ListNotificationComponent
+    
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
+    Ionic2RatingModule,
 		TranslateModule.forRoot({
     loader: {
         provide: TranslateLoader,
@@ -165,7 +181,11 @@ export function createTranslateLoader(http: Http) {
 		AppRate,
 		ImagePicker,
 		Crop,
-		EmailComposer
+		EmailComposer,
+    ProductserviceProvider,
+    ProductDetailServiceProvider,
+    NotificationServiceProvider,
+    ProfileServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

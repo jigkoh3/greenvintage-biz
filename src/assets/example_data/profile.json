@@ -1,0 +1,17 @@
+{
+    "name": "Secret Shop",
+    "detail": "ร้านขายของ",
+    "image": "http://www.netpicks.com/wp-content/uploads/2015/04/ex.jpg",
+    "tel": "0987654321",
+    "email": "Secret@gmail.com",
+    "address": {
+        "firstname": "สรายุทธ",
+        "lastname": "กังสรานุวัตถ์",
+        "address": "7/7 หมู่ 7",
+        "district": "ลำลูกกา",
+        "subdistrict": "ลำลูกกา",
+        "province": "ปทุมธานี",
+        "postcode": "12150",
+        "country": "ไทย"
+    }
+}

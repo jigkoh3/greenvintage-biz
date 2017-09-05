@@ -1,5 +1,5 @@
 <!--
-  Generated template for the ProfilePage page.
+  Generated template for the ShopPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -13,6 +13,48 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8 padding>
+        <img [src]="profile.image" alt="logo">
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-list padding>
+
+    <ion-item>
+      <ion-label stacked>Address</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.address.address"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>District</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.address.district"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Subdistrict</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.address.subdistrict"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Province</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.address.province"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Postcode</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.address.postcode"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Country</ion-label>
+      <ion-input type="text" [(ngModel)]="profile.address.country"></ion-input>
+    </ion-item>
+
+  </ion-list>
 
 </ion-content>

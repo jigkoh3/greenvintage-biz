@@ -6,13 +6,13 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Notification</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>Notification</ion-title>
+    </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content>
+    <list-notification [items]="notification.items" (click)="selectedItem()"></list-notification>
 </ion-content>
