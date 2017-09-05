@@ -18,7 +18,7 @@ export class OrderServiceProvider {
   }
 
   getData(): Promise <OrderModel>{
-    return this.http.get('../../assets/example_data/productlist.json')
+    return this.http.get('../../assets/example_data/order.json')
     .toPromise()
     .then( resp => resp.json() as OrderModel)
     .catch(err => Promise.reject(err.message || err));

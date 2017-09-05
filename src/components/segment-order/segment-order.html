@@ -1,14 +1,10 @@
 <!-- Generated template for the ListOrderComponent component -->
 <div *ngIf="parent.channel == 1">
-    new order
-    <list-order [items]="items"></list-order>
-  </div>
-  <div *ngIf="parent.channel == 2">
-    sent
-    <list-order [items]="items"></list-order>
-  </div>
-  <div *ngIf="parent.channel == 3">
-    unreceived
-    <list-order [items]="items"></list-order>
-  </div>
-  
+  <list-order [items]="items.waiting"></list-order>
+</div>
+<div *ngIf="parent.channel == 2">
+  <list-order [items]="items.accept"></list-order>
+</div>
+<div *ngIf="parent.channel == 3">
+  <list-order [items]="items.unreceive"></list-order>
+</div>

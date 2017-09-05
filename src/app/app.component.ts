@@ -23,7 +23,7 @@ export class MyApp {
   //rootPage: any = WalkthroughPage;
   // rootPage: any = FunctionalitiesPage;
   //  rootPage: any = HomePage;
-  rootPage: any = WalkthroughPage;
+  rootPage: any = TabsNavigationPage;
   textDir: string = "ltr";
 
   pages: Array<{title: any, icon: string, component: any}>;

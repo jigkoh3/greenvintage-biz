@@ -1,8 +1,11 @@
 export class OrderModel {
-    items: Array<OrderItemModel>;
+    waiting: Array<OrderItemModel>;
+    accept: Array<OrderItemModel>;
+    unreceive: Array<OrderItemModel>;
 }
 
 export class OrderItemModel {
+    docno: String;
     name: String;
     image: String;
     price: Number;
@@ -10,6 +13,7 @@ export class OrderItemModel {
     discount: Number;
     discounttype: String;
     currency: String;
-    rate: Number;
+    qty: Number;
+    status: String;
     description: string;
-  }
+}
