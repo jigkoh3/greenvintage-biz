@@ -71,6 +71,7 @@ import { OrderPage } from '../pages/order/order';
 import { ProductPage } from '../pages/product/product';
 import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
+import { IonOrdersComponent } from '../components/ion-orders/ion-orders';
 
 
 export function createTranslateLoader(http: Http) {
@@ -105,7 +106,8 @@ export function createTranslateLoader(http: Http) {
     ListScollXComponent,
     ListGridComponent,
     AdsHeaderBarComponent,
-    TestComponent
+    TestComponent,
+    IonOrdersComponent
   ],
   imports: [
     BrowserModule,
