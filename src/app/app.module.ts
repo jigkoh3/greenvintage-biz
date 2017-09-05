@@ -14,9 +14,8 @@ import { ShowHideContainer } from '../components/show-hide-password/show-hide-co
 import { ShowHideInput } from '../components/show-hide-password/show-hide-input';
 import { ColorRadio } from '../components/color-radio/color-radio';
 import { CounterInput } from '../components/counter-input/counter-input';
-import { Rating } from '../components/rating/rating';
 // import { GoogleMap } from '../components/google-map/google-map';
-
+import { Ionic2RatingModule } from 'ionic2-rating';
 // import { FacebookLoginService } from '../pages/facebook-login/facebook-login.service';
 // import { GoogleLoginService } from '../pages/google-login/google-login.service';
 // import { TwitterLoginService } from '../pages/twitter-login/twitter-login.service';
@@ -71,6 +70,9 @@ import { OrderPage } from '../pages/order/order';
 import { ProductPage } from '../pages/product/product';
 import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
+import { ProductserviceProvider } from "../pages/product/product.service";
+import { ListItemsComponent } from "../components/list-items/list-items";
+
 
 
 export function createTranslateLoader(http: Http) {
@@ -99,18 +101,20 @@ export function createTranslateLoader(http: Http) {
     ShowHideInput,
     ColorRadio,
     CounterInput,
-    Rating,
     TabsNavigationPage,
     // GoogleMap,
     ListScollXComponent,
     ListGridComponent,
     AdsHeaderBarComponent,
-    TestComponent
+    TestComponent,
+    ListItemsComponent
+    
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
+    Ionic2RatingModule,
 		TranslateModule.forRoot({
     loader: {
         provide: TranslateLoader,
@@ -157,7 +161,8 @@ export function createTranslateLoader(http: Http) {
 		AppRate,
 		ImagePicker,
 		Crop,
-		EmailComposer
+		EmailComposer,
+    ProductserviceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
