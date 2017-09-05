@@ -72,7 +72,8 @@ import { NotificationPage } from '../pages/notification/notification';
 import { ProfilePage } from '../pages/profile/profile';
 import { ProductserviceProvider } from "../pages/product/product.service";
 import { ListItemsComponent } from "../components/list-items/list-items";
-
+import { TopbarComponent } from "../components/topbar/topbar";
+import { ProductDetailServiceProvider } from "../pages/product-detail/product-detail.service";
 
 
 export function createTranslateLoader(http: Http) {
@@ -104,6 +105,7 @@ export function createTranslateLoader(http: Http) {
     TabsNavigationPage,
     // GoogleMap,
     ListScollXComponent,
+    TopbarComponent,
     ListGridComponent,
     AdsHeaderBarComponent,
     TestComponent,
@@ -162,7 +164,9 @@ export function createTranslateLoader(http: Http) {
 		ImagePicker,
 		Crop,
 		EmailComposer,
-    ProductserviceProvider
+    ProductserviceProvider,
+    ProductDetailServiceProvider
+    
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { ProductserviceProvider } from "./product.service";
 import { ProductModel } from "../product/product.model";
+import { ProductDetailPage } from "../product-detail/product-detail";
 
 /**
  * Generated class for the ProductPage page.
@@ -28,5 +29,7 @@ export class ProductPage {
       console.log(data);
     })
   }
-
+  selectedItem(){
+    this.navCtrl.push(ProductDetailPage);
+  }
 }
