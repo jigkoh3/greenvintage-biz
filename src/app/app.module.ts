@@ -76,6 +76,7 @@ import { TopbarComponent } from "../components/topbar/topbar";
 import { ProductDetailServiceProvider } from "../pages/product-detail/product-detail.service";
 import { NotificationServiceProvider } from "../pages/notification/notification.service";
 import { ListNotificationComponent } from "../components/list-notification/list-notification";
+import { ProfileServiceProvider } from '../pages/profile/profile.service';
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -168,7 +169,8 @@ export function createTranslateLoader(http: Http) {
 		EmailComposer,
     ProductserviceProvider,
     ProductDetailServiceProvider,
-    NotificationServiceProvider
+    NotificationServiceProvider,
+    ProfileServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })
