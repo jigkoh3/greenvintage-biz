@@ -17,7 +17,7 @@ export class ProductserviceProvider {
     console.log('Hello ProductserviceProvider Provider');
   }
   getData(): Promise <ProductModel>{
-    return this.http.get('../../assets/example_data/productlist.json')
+    return this.http.get('./assets/example_data/productlist.json')
     .toPromise()
     .then( resp => resp.json() as ProductModel)
     .catch(err => Promise.reject(err.message || err));
