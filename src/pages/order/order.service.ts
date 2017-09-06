@@ -17,10 +17,10 @@ export class OrderServiceProvider {
     console.log('Hello OrderServiceProvider Provider');
   }
 
-  getData(): Promise <OrderModel>{
+  getData(){
     return this.http.get('../../assets/example_data/order.json')
     .toPromise()
-    .then( resp => resp.json() as OrderModel)
+    .then( resp => resp.json())
     .catch(err => Promise.reject(err.message || err));
   }
 

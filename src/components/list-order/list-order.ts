@@ -14,6 +14,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ListOrderComponent {
   @Input() items: any;
+  @Input() status: string;
 
   constructor(public navCtrl: NavController) {
     console.log('Hello ListOrderComponent Component');

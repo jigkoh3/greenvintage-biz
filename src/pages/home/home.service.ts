@@ -10,10 +10,10 @@ import { HomeModel } from "./home.model";
 export class HomeService {
   constructor(public http: Http) {}
 
-  getData(): Promise<HomeModel> {
+  getData() {
     return this.http.get('./assets/example_data/order.json')
      .toPromise()
-     .then(response => response.json() as HomeModel)
+     .then(response => response.json())
      .catch(this.handleError);
   }
 
