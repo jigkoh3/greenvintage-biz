@@ -92,6 +92,7 @@ import { OrderdetailserviceProvider } from "../pages/order-detail/order-detail.s
 
 import { CreateProductPage } from "../pages/create-product/create-product";
 import { FormProductComponent } from '../components/form-product/form-product';
+import { CreateProductServiceProvider } from "../pages/create-product/create-product.service";
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -198,7 +199,8 @@ export function createTranslateLoader(http: Http) {
     NotificationServiceProvider,
     OrderServiceProvider,
     ProfileServiceProvider,
-    OrderdetailserviceProvider
+    OrderdetailserviceProvider,
+    CreateProductServiceProvider
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
 })

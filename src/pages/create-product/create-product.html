@@ -14,8 +14,8 @@
 
 
 <ion-content>
-    <form-product></form-product>
+    <form-product (ProductForm)="dataProductForm($event)" [dataSize]="sizemaster" [dataCate]="categorymaster" [dataShipping]="shippingmaster" [dataShop]="shopmaster"></form-product>
 </ion-content>
 <ion-footer>
-    <button ion-button full color="default">{{"SAVE" | translate}}</button>
+    <button ion-button full color="default" (click)="createProducts()">{{"CREATE_PRODUCT" | translate}}</button>
 </ion-footer>
