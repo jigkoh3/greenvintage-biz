@@ -16,7 +16,7 @@ import { HomeModel } from "../home/home.model";
   templateUrl: 'home.html',
 })
 export class HomePage {
-  homeData: HomeModel = new HomeModel();
+  homeData: Array<HomeModel>;
   @ViewChild('doughnutCanvas') doughnutCanvas;
   @ViewChild('lineCanvas') lineCanvas;
   doughnutChart: any;

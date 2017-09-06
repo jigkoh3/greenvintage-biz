@@ -1,12 +1,15 @@
 export class OrderDetailModel {
-    amount: number
-    cart: string;
-    discount: number;
+    _id: string;
+    created: string;
+    status: string;
+    shipping: Shipping = new Shipping();
+    user: UserModel = new UserModel();
     items: Array<Items>;
-    payment : Payment = new Payment();
+
 
 }
 export class Items {
+    _id: string;
     delivery: Delivery = new Delivery();
     product: Product = new Product();
     amount: number;
@@ -16,15 +19,16 @@ export class Items {
 }
 export class Product {
     _id: string;
+    price: number;
     category: string;
     created: string;
     name: string;
     unitprice: number;
     sellerSummary: string;
-    shop: string;
-    user: string;
+    shop: ShopModel = new ShopModel();
     image: Array<Image>;
-    shippings: Array<Shippings>;
+    delivery: Delivery = new Delivery();
+    shippings: Array<ShippingsModel>;
 }
 
 export class Image {
@@ -32,9 +36,16 @@ export class Image {
     url: string;
 }
 
-export class Shippings {
-    _id: string;
-    shipping: string;
+export class Shipping {
+    firstname: string;
+    lastname: string;
+    tel: string;
+    address: string;
+    subdistrict: string;
+    district: string;
+    province: string;
+    postcode: number;
+    created: string;
 }
 export class Delivery {
     _id: string;
@@ -45,7 +56,67 @@ export class Delivery {
     price: number;
     user: string;
 }
-export class Payment {
-    counterservice: string;
-    paymenttype: string;
+
+export class UserModel {
+    firstName: string;
+    lastName: string;
+    displayName: string;
+    email: string;
+    username: string;
+    password: string;
+    provider: string;
+}
+
+export class AddressModel {
+    firstname: string;
+    lastname: string;
+    tel: string;
+    address: string;
+    subdistrict: string;
+    district: string;
+    province: string;
+    postcode: string;
+}
+
+export class ShippingsModel {
+    shipping: Shippings = new Shippings();
+}
+
+export class ShopModel {
+    name: string;
+    detail: string;
+    email: string;
+    tel: string;
+    image: string;
+    map: {
+        lat: string;
+        lng: string;
+    }
+}
+
+export class Shippings {
+    name: string;
+    detail: string;
+    days: number;
+    price: number;
+}
+
+
+export class CategoryModel {
+    name: string;
+    detail: string;
+    parent: string;
+}
+
+export class ProductModel {
+    name: string;
+    price: number;
+    image: [{
+        url: string;
+    }]
+    shop: string;
+    shippings: [{
+        shipping: string;
+    }]
+    category: string;
 }

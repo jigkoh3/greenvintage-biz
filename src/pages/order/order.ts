@@ -15,7 +15,7 @@ import { OrderModel } from "../order/order.model";
   templateUrl: 'order.html',
 })
 export class OrderPage {
-  orderlistData: OrderModel = new OrderModel();
+  orderlistData: Array<OrderModel>;
   channel: number = 1;
   
   steps: Array<any> = [
@@ -29,7 +29,7 @@ export class OrderPage {
     },
     {
       value: 3,
-      title: "Unreceived"
+      title: "Reject"
     }
   ];
 

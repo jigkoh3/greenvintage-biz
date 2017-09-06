@@ -17,10 +17,10 @@ export class OrderServiceProvider {
     console.log('Hello OrderServiceProvider Provider');
   }
 
-  getData(): Promise <OrderModel>{
-    return this.http.get('../../assets/example_data/order.json')
+  getData(){
+    return this.http.get('https://greenvintage.herokuapp.com/api/orderlistbyshops')
     .toPromise()
-    .then( resp => resp.json() as OrderModel)
+    .then( resp => resp.json())
     .catch(err => Promise.reject(err.message || err));
   }
 

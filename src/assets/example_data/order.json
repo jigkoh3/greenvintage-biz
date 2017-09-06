@@ -1,86 +1,374 @@
-{
-    "waiting": [
-        {
-            "docno": "DOC NO.002",
-            "name": "11Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount": 10,
-            "discounttype": "%",
-            "currency": "THB",
-            "qty": 5,
-            "status": "waiting",
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
+[
+    {
+        "_id": "59af742be20930c8298b14f9",
+        "shipping": {
+            "_id": "59af742ae20930c8298b14ee",
+            "firstname": "getorder",
+            "lastname": "getorder",
+            "tel": "tel",
+            "address": "getorder",
+            "subdistrict": "subdistrict",
+            "district": "district",
+            "province": "province",
+            "postcode": "postcode",
+            "__v": 0,
+            "created": "2017-09-06T04:06:02.173Z"
         },
-        {
-            "docno": "DOC NO.001",
-            "name": "Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount": 10,
-            "discounttype": "%",
-            "currency": "THB",
-            "qty": 5,
-            "status": "waiting",
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
-        }
-    ],
-    "accept": [
-        {
-            "docno": "DOC NO.002",
-            "name": "22Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount": 10,
-            "discounttype": "%",
-            "currency": "THB",
-            "qty": 5,
-            "status": "accept",
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
+        "user": {
+            "_id": "59af742ae20930c8298b14f1",
+            "displayName": "getorder getorder"
         },
-        {
-            "docno": "DOC NO.001",
-            "name": "Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount": 10,
-            "discounttype": "%",
-            "currency": "THB",
-            "qty": 5,
-            "status": "accept",
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
-        }
-    ],
-    "unreceive": [
-        {
-            "docno": "DOC NO.002",
-            "name": "33Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount": 10,
-            "discounttype": "%",
-            "currency": "THB",
-            "qty": 5,
-            "status": "unreceive",
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
+        "__v": 0,
+        "created": "2017-09-06T04:06:03.210Z",
+        "status": "paid",
+        "items": [
+            {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59af742ae20930c8298b14ef",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "waiting"
+            }
+        ]
+    },
+    {
+        "_id": "59af742be20930c8298b14f9",
+        "shipping": {
+            "_id": "59af742ae20930c8298b14ee",
+            "firstname": "getorder",
+            "lastname": "getorder",
+            "tel": "tel",
+            "address": "getorder",
+            "subdistrict": "subdistrict",
+            "district": "district",
+            "province": "province",
+            "postcode": "postcode",
+            "__v": 0,
+            "created": "2017-09-06T04:06:02.173Z"
         },
-        {
-            "docno": "DOC NO.001",
-            "name": "Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount": 10,
-            "discounttype": "%",
-            "currency": "THB",
-            "qty": 5,
-            "status": "unreceive",
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
-        }
-    ]
-}
+        "user": {
+            "_id": "59af742ae20930c8298b14f1",
+            "displayName": "getorder getorder"
+        },
+        "__v": 0,
+        "created": "2017-09-06T04:06:03.210Z",
+        "status": "paid",
+        "items": [
+            {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59af742ae20930c8298b14ef",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "waiting"
+            }
+        ]
+    },
+    {
+        "_id": "59af742be20930c8298b14f9",
+        "shipping": {
+            "_id": "59af742ae20930c8298b14ee",
+            "firstname": "getorder",
+            "lastname": "getorder",
+            "tel": "tel",
+            "address": "getorder",
+            "subdistrict": "subdistrict",
+            "district": "district",
+            "province": "province",
+            "postcode": "postcode",
+            "__v": 0,
+            "created": "2017-09-06T04:06:02.173Z"
+        },
+        "user": {
+            "_id": "59af742ae20930c8298b14f1",
+            "displayName": "getorder getorder"
+        },
+        "__v": 0,
+        "created": "2017-09-06T04:06:03.210Z",
+        "status": "paid",
+        "items": [
+            {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59af742ae20930c8298b14ef",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.limstreet.com/wp-content/uploads/2017/04/BY3035_PRFTWSTBBG_001_FI-e1491407053798-1024x737.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "accept"
+            }
+        ]
+    },
+    {
+        "_id": "59af742be20930c8298b14f9",
+        "shipping": {
+            "_id": "59af742ae20930c8298b14ee",
+            "firstname": "getorder",
+            "lastname": "getorder",
+            "tel": "tel",
+            "address": "getorder",
+            "subdistrict": "subdistrict",
+            "district": "district",
+            "province": "province",
+            "postcode": "postcode",
+            "__v": 0,
+            "created": "2017-09-06T04:06:02.173Z"
+        },
+        "user": {
+            "_id": "59af742ae20930c8298b14f1",
+            "displayName": "getorder getorder"
+        },
+        "__v": 0,
+        "created": "2017-09-06T04:06:03.210Z",
+        "status": "paid",
+        "items": [
+            {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59af742ae20930c8298b14ef",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.limstreet.com/wp-content/uploads/2017/04/BY3035_PRFTWSTBBG_001_FI-e1491407053798-1024x737.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "reject"
+            }
+        ]
+    }
+]
