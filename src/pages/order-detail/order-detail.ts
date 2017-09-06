@@ -18,14 +18,15 @@ export class OrderDetailPage {
   orderdetailData: OrderDetailModel = new OrderDetailModel;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider) {
-  }
+  this.orderdetailData = navParams.get('items');
+}
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderDetailPage');
-    this.orderdetailserviceProvider.getData().then(data => {
-      this.orderdetailData = data;
-      console.log(data);
-    })
+    // this.orderdetailserviceProvider.getData().then(data => {
+    //   this.orderdetailData = data;
+    //   console.log(data);
+    // })
   }
 
 }

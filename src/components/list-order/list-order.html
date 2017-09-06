@@ -1,13 +1,13 @@
 <div *ngFor="let itm of items">
   <div *ngFor="let item of itm.items">
-    <ion-list *ngIf="item.status === status" (click)="selectOrder()">
+    <ion-list *ngIf="item.status === status" (click)="selectOrder(item, itm.shipping)">
       <ion-item>
         <ion-row>
           <ion-col no-padding width-33 class="magin-right-10-custom">
             <preload-image [ratio]="{w:1, h:1}" [src]="item.product.image[0].url"></preload-image>
           </ion-col>
           <ion-col *ngIf="item.status === status">
-              <h3 class="h3-name">Doc No. {{itm._id}}</h3>
+              <!--<h3 class="h3-name">Doc No. {{itm._id}}</h3>-->
               <p>{{item.product.name}}</p>
               <p>{{item.qty}} qty</p>
               <p class="color-orenge-custom">{{item.product.price | number}} Baht</p>

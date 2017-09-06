@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IonOrdersComponent } from "../ion-orders/ion-orders";
 import { OrderDetailPage } from "../../pages/order-detail/order-detail";
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -15,11 +15,19 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class ListOrderComponent {
   @Input() items: any;
   @Input() status: string;
-
+  @Output() itemClicked: EventEmitter<any> = new EventEmitter<any>();
+  data: any = {
+    items: [],
+    shipping: {}
+  };
   constructor(public navCtrl: NavController) {
     console.log('Hello ListOrderComponent Component');
   }
-  selectOrder() {
-    this.navCtrl.push(OrderDetailPage);
+  selectOrder(item, shipping) {
+    this.data.items.push(item);
+    this.data.shipping = shipping;
+    console.log(this.data);
+    // this.navCtrl.push(OrderDetailPage);
+    this.itemClicked.emit(this.data);
   }
 }

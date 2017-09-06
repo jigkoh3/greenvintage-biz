@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { ProductDetailModel } from '../product-detail/product-detail.model';
 import { ProductDetailServiceProvider } from '../product-detail/product-detail.service';
 import { CartPage } from '../cart/cart';
 import { SocialSharing } from "@ionic-native/social-sharing";
+import { ProductItemModel } from "../../app/app.model";
+
 /**
  * Generated class for the ProductDetailPage page.
  *
@@ -16,25 +17,27 @@ import { SocialSharing } from "@ionic-native/social-sharing";
 })
 export class ProductDetailPage {
   product: any;
-  productdetailData: ProductDetailModel = new ProductDetailModel;
+  productdetailData: ProductItemModel = new ProductItemModel;
   constructor(private socialSharing: SocialSharing, public navCtrl: NavController, public navParams: NavParams, public productDetailService: ProductDetailServiceProvider) {
     this.product = navParams.get('title');
+    this.productdetailData = navParams.get('product');
+    console.log(this.productdetailData);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProductDetailPage');
-    this.getProductdetailData();
+    // this.getProductdetailData();
   }
-  getProductdetailData() {
-    this.productDetailService
-      .getProductDetail()
-      .then((data) => {
-        this.productdetailData = data;
-        console.log(this.productdetailData);
-      }, (err) => {
-        console.log(err);
-      });
-  }
+  // getProductdetailData() {
+  //   this.productDetailService
+  //     .getProductDetail()
+  //     .then((data) => {
+  //       this.productdetailData = data;
+  //       console.log(this.productdetailData);
+  //     }, (err) => {
+  //       console.log(err);
+  //     });
+  // }
   addToCart() {
     alert('thank you');
     this.navCtrl.push(CartPage);

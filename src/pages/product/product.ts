@@ -4,6 +4,7 @@ import { ProductserviceProvider } from "./product.service";
 import { ProductModel } from "../product/product.model";
 import { ProductDetailPage } from "../product-detail/product-detail";
 import { CreateProductPage } from "../create-product/create-product";
+import { ProductItemModel } from "../../app/app.model";
 
 /**
  * Generated class for the ProductPage page.
@@ -17,7 +18,7 @@ import { CreateProductPage } from "../create-product/create-product";
   templateUrl: 'product.html',
 })
 export class ProductPage {
-  productlistData: ProductModel = new ProductModel;
+  productlistData: Array<ProductItemModel>;
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public productserviceProvider: ProductserviceProvider) {
@@ -27,15 +28,16 @@ export class ProductPage {
     console.log('ionViewDidLoad ProductPage');
     this.productserviceProvider.getData().then(data => {
       this.productlistData = data;
-      console.log(data);
+      // console.log(data);
     })
   }
-  selectedItem(){
-    this.navCtrl.push(ProductDetailPage);
+  selectedItem(e) {
+    console.log(e);
+    this.navCtrl.push(ProductDetailPage, { product: e });
   }
 
-  createProduct(){
+  createProduct() {
     this.navCtrl.push(CreateProductPage);
-    
+
   }
 }

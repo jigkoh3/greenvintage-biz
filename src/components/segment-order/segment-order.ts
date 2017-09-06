@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { IonOrdersComponent } from "../ion-orders/ion-orders";
 
 /**
@@ -12,13 +12,19 @@ import { IonOrdersComponent } from "../ion-orders/ion-orders";
   templateUrl: 'segment-order.html'
 })
 export class SegmentOrderComponent {
-
+  order:any;
   text: string;
   @Input() items: any;
-
+  @Output() SelectedOrder: EventEmitter<any> = new EventEmitter<any>();
   constructor(public parent: IonOrdersComponent) {
     console.log('Hello SegmentOrderComponent Component');
     this.text = 'Hello World';
   }
+   getItem(e){
+    this.order = e;
+  }
 
+  getOrder(){
+    this.SelectedOrder.emit(this.order);
+  }
 }

@@ -84,10 +84,11 @@ export class ShopModel {
     email: string;
     tel: string;
     image: string;
-    map: {
-        lat: string;
-        lng: string;
-    }
+    map: map = new map();
+}
+export class map {
+    lat: string;
+    lng: string;
 }
 export class Shippings {
     name: string;

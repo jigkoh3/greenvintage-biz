@@ -1,60 +1,124 @@
-{
-    "title": "Product List",
-    "items": [
+[
+  {
+    "_id": "59afd4fc235b1e10002a3c56",
+    "name": "product1",
+    "detail": "product1 detail",
+    "price": 70,
+    "preparedays": 7,
+    "category": "59af83f8e8fbbb3fecd0538f",
+    "issize": true,
+    "size": {
+      "detail": "US",
+      "sizedetail": [
         {
-            "name": "Crossfit WorldWide Event",
-            "image": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount" : 10,
-            "discounttype" : "%",
-            "currency": "THB",
-            "rate":5,
-            "description": "At the Crossfit WorldWide Event athletes at compete in workouts that they learn about hours or days beforehand, consisting mostly of an assortment of standard aerobic, weightlifting, and gymnastics movement."
-          },
-          {
-            "name": "US Open",
-            "image": "http://www.9digits.com/wp-content/uploads/2016/01/Nike-Air-Zoom-Pegasus-31-Mens-Running-Shoe-652925_801_C_PREM.jpg",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount" : 10,
-            "discounttype" : "%",
-            "currency": "THB",
-            "rate":5,
-            "description": "The United States Open Tennis Championships is a hardcourt tennis tournament. The tournament is the modern version of one of the oldest tennis championships in the world, the U.S. National Championship, for which men's singles was first contested in 1881."
-          },
-          {
-            "name": "The Basketball Tournament",
-            "image": "https://images.footlocker.com/pi/34835006/zoom/nike-air-huarache-womens",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount" : 10,
-            "discounttype" : "%",
-            "currency": "THB",
-            "rate":5,
-            "description": "The Basketball Tournament (TBT) is an open-application, single-elimination tournament played each summer in the United States, currently featuring 64 teams. It was founded in 2014 by Jonathan Mugar."
-          },
-          {
-            "name": "British Open",
-            "image": "http://lovesneaker.com/12228-thickbox_default/-nike-flyknit-racer-nike-10-0027.jpg",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount" : 10,
-            "discounttype" : "%",
-            "currency": "THB",
-            "rate": 4.5,
-            "description": "The Open Championship, often referred to as The Open or the British Open, is the oldest of the four major championships in professional golf. Held in the United Kingdom, it is administered by The R&A and is the only major outside the United States."
-          },
-          {
-            "name": "FIFA World Cup",
-            "price": 1800,
-            "normalprice": 20000,
-            "discount" : 10,
-            "discounttype" : "%",
-            "currency": "THB",
-            "rate":5,
-            "image": "https://thesolesupplier.co.uk/wp-content/uploads/2017/05/Nike-Flyknit-Racer-Be-True.png",
-            "description": "The FIFA World Cup, often simply called the World Cup, is an international association football competition contested by the senior men's national teams of the members of Fédération Internationale de Football Association (FIFA), the sport's global governing body."
-          }
+          "name": "S",
+          "_id": "59af9b7d4eb4c01441a4d5ae"
+        },
+        {
+          "name": "M",
+          "_id": "59af9b7d4eb4c01441a4d5ad"
+        },
+        {
+          "name": "L",
+          "_id": "59af9b7d4eb4c01441a4d5ac"
+        },
+        {
+          "name": "XL",
+          "_id": "59af9b7d4eb4c01441a4d5ab"
+        }
+      ]
+    },
+    "shop": {
+      "_id": "59af742ae20930c8298b14ef",
+      "detail": "Shop getorder",
+      "email": "getorder@email.com",
+      "tel": "0999999999",
+      "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+      "__v": 0,
+      "created": "2017-09-06T04:06:02.175Z",
+      "sellerSummary": 0,
+      "map": {
+        "lat": "1000",
+        "lng": "1000"
+      },
+      "name": "Shopmaster getorder"
+    },
+    "sellerSummary": 0,
+    "sellerlog": [],
+    "shippings": [
+      {
+        "shipping": "59ae3228d9538db42029a7ad",
+        "_id": "59afd4fc235b1e10002a3c58"
+      }
+    ],
+    "historylog": [],
+    "favorite": [],
+    "image": [
+      {
+        "url": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
+        "_id": "59afd4fc235b1e10002a3c57"
+      }
     ]
-}
+  },
+  {
+    "_id": "59afd4fc235b1e10002a3c57",
+    "name": "product2",
+    "detail": "product2 detail",
+    "price": 90,
+    "preparedays": 7,
+    "category": "59af83f8e8fbbb3fecd0538f",
+    "issize": true,
+    "size": {
+      "detail": "US",
+      "sizedetail": [
+        {
+          "name": "S",
+          "_id": "59af9b7d4eb4c01441a4d5ae"
+        },
+        {
+          "name": "M",
+          "_id": "59af9b7d4eb4c01441a4d5ad"
+        },
+        {
+          "name": "L",
+          "_id": "59af9b7d4eb4c01441a4d5ac"
+        },
+        {
+          "name": "XL",
+          "_id": "59af9b7d4eb4c01441a4d5ab"
+        }
+      ]
+    },
+    "shop": {
+      "_id": "59af742ae20930c8298b14ef",
+      "detail": "Shop getorder",
+      "email": "getorder@email.com",
+      "tel": "0999999999",
+      "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+      "__v": 0,
+      "created": "2017-09-06T04:06:02.175Z",
+      "sellerSummary": 0,
+      "map": {
+        "lat": "1000",
+        "lng": "1000"
+      },
+      "name": "Shopmaster getorder"
+    },
+    "sellerSummary": 0,
+    "sellerlog": [],
+    "shippings": [
+      {
+        "shipping": "59ae3228d9538db42029a7ad",
+        "_id": "59afd4fc235b1e10002a3c58"
+      }
+    ],
+    "historylog": [],
+    "favorite": [],
+    "image": [
+      {
+        "url": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
+        "_id": "59afd4fc235b1e10002a3c57"
+      }
+    ]
+  }
+]

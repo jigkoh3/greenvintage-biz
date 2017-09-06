@@ -4,7 +4,7 @@ import { Validators, FormGroup, FormControl } from '@angular/forms';
 
 import { CreateProductServiceProvider } from "./create-product.service";
 import { ProductModel, SizeModel, CategoryModel, ShippingModel, ShopModel } from "./create-product.model";
-import { TabsNavigationPage } from "../tabs-navigation/tabs-navigation";
+import { ProductPage } from '../product/product';
 
 /**
  * Generated class for the CreateProductPage page.
@@ -51,7 +51,7 @@ export class CreateProductPage {
   }
   createProducts() {
     this.createProduct.newProduct(this.productData).then((data) => {
-      this.navCtrl.setRoot(TabsNavigationPage);
+      this.navCtrl.setRoot(ProductPage);
       console.log(data);
     }, (error) => {
       console.error(error);

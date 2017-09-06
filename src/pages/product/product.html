@@ -14,7 +14,7 @@
 
 
 <ion-content class="list-big-content">
-    <list-items [items]="productlistData.items" [showSearch]="true" [showToolbar]="true" (itemClicked)="selectedItem()"></list-items>
+    <list-items [items]="productlistData" [showSearch]="true" [showToolbar]="true" (itemClicked)="selectedItem($event)"></list-items>
     <ion-fab right bottom (click)="createProduct()">
         <button ion-fab><ion-icon name="add"></ion-icon></button>
     </ion-fab>

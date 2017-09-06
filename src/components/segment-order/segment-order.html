@@ -1,10 +1,10 @@
 <!-- Generated template for the ListOrderComponent component -->
 <div *ngIf="parent.channel == 1">
-  <list-order [items]="items" [status]="'waiting'"></list-order>
+  <list-order [items]="items" [status]="'waiting'" (itemClicked)="getItem($event)" (click)="getOrder()"></list-order>
 </div>
 <div *ngIf="parent.channel == 2">
-  <list-order [items]="items" [status]="'accept'"></list-order>
+  <list-order [items]="items" [status]="'accept'" (itemClicked)="getItem($event)" (click)="getOrder()"></list-order>
 </div>
 <div *ngIf="parent.channel == 3">
-  <list-order [items]="items" [status]="'reject'"></list-order>
+  <list-order [items]="items" [status]="'reject'" (itemClicked)="getItem($event)" (click)="getOrder()"></list-order>
 </div>

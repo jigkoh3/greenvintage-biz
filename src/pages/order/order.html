@@ -15,6 +15,6 @@
 
 <ion-content>
   <ion-orders [steps]="steps" [(channel)]="channel">
-    <segment-order [items]="orderlistData"></segment-order>
+    <segment-order [items]="orderlistData" (SelectedOrder)="selectedItem($event)"></segment-order>
   </ion-orders>
 </ion-content>

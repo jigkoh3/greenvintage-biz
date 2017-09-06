@@ -18,7 +18,7 @@
           </h3>
         </ion-col>
         <ion-col width-65 text-right>
-          <h3>Price {{productdetailData.unitprice | number}} ฿</h3>
+          <h3>Price {{productdetailData.price | number}} ฿</h3>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -51,7 +51,7 @@
         {{'Shop' | translate}}</h3>
       <ion-row>
         <ion-col width-35>
-          <span class="detail-textHeader">{{productdetailData.shop.shop}}</span>
+          <span class="detail-textHeader">{{productdetailData.shop.name}}</span>
         </ion-col>
         <ion-col width-65 text-right>
           <rating [(ngModel)]="productdetailData.shop.rate" readOnly="false" max="5" emptyStarIconName="star-outline" halfStarIconName="star-half"
@@ -65,7 +65,7 @@
     <!-- <ion-icon name="ios-resize-outline"></ion-icon> -->
     {{'Select Size' | translate}}</h3>
   <!-- <preload-image [ratio]="{w:1, h:1}" [src]="productdetailData.size.detail"></preload-image> -->
-  <ion-scroll scrollX="true" class="horizontal-categories">
+  <ion-scroll scrollX="true" class="horizontal-categories" *ngIf="productdetailData.size && productdetailData.size.sizedetail && productdetailData.size.sizedetail.length > 0">
     <ion-row padding radio-group class="categories-row">
       <ion-col width-30 class="horizontal-item" *ngFor="let data of productdetailData.size.sizedetail">
         <ion-label>{{data.name}}</ion-label>
@@ -98,14 +98,14 @@
         <ion-icon name="md-person"></ion-icon> ({{item.rate}})</h4>
       <rating [(ngModel)]="item.rate" readOnly="false" max="5" emptyStarIconName="star-outline" halfStarIconName="star-half" starIconName="star"
         nullable="false"></rating>
-      <p class="detail-text">{{item.comment}}</p>
+        <p class="detail-text">{{item.comment}}</p>
     </ion-item>
     <ion-item></ion-item>
   </ion-list>
 
 </ion-content>
 
-<ion-footer>
+<!--<ion-footer>
   <ion-row>
     <ion-col>
 
@@ -113,4 +113,4 @@
   </ion-row>
   <button ion-button block color="danger" (click)="addToCart()">{{"ADDCART"| translate}}</button>
 
-</ion-footer>
+</ion-footer>-->
