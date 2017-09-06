@@ -29,7 +29,7 @@ export class OrderPage {
     },
     {
       value: 3,
-      title: "Unreceived"
+      title: "Reject"
     }
   ];
 

@@ -367,7 +367,7 @@
                     "created": "2017-09-06T04:06:02.178Z"
                 },
                 "_id": "59af742be20930c8298b14fa",
-                "status": "unreceived"
+                "status": "reject"
             }
         ]
     }
