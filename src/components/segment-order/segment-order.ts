@@ -12,7 +12,7 @@ import { IonOrdersComponent } from "../ion-orders/ion-orders";
   templateUrl: 'segment-order.html'
 })
 export class SegmentOrderComponent {
-  order:any;
+  order: any;
   text: string;
   @Input() items: any;
   @Output() SelectedOrder: EventEmitter<any> = new EventEmitter<any>();
@@ -20,11 +20,11 @@ export class SegmentOrderComponent {
     console.log('Hello SegmentOrderComponent Component');
     this.text = 'Hello World';
   }
-   getItem(e){
+  getItem(e) {
     this.order = e;
   }
 
-  getOrder(){
+  getOrder() {
     this.SelectedOrder.emit(this.order);
   }
 }

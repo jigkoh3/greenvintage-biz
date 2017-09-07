@@ -14,7 +14,7 @@
 
 
 <ion-content class="contact-card-content">
-  <topbar *ngIf="orderdetailData.items && orderdetailData.items.length > 0" [dataTopBar]="orderdetailData.items[0].product"></topbar>
+  <topbar *ngIf="orderdetailData.items && orderdetailData.items.length > 0" [dataTopBar]="orderdetailData.items[indexItem].product"></topbar>
 
   <ion-list class="details-list">
     <ion-item class="detail-item">
@@ -25,7 +25,7 @@
           </h3>
         </ion-col>
         <ion-col width-65 text-right>
-          <h3 *ngIf="orderdetailData.items && orderdetailData.items.length > 0">Price {{orderdetailData.items[0].product.price | number}} ฿</h3>
+          <h3 *ngIf="orderdetailData.items && orderdetailData.items.length > 0">Price {{orderdetailData.items[indexItem].product.price | number}} ฿</h3>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -43,9 +43,9 @@
       <div>
 
         <span class="detail-textHeader">จัดส่ง : {{orderdetailData.shipping.address}}</span>
-        <span class="detail-textHeader">  {{orderdetailData.items[0].product.shippings[0].shipping.detail}} </span>
-        <span class="detail-textHeader"> ค่าจัดส่ง {{orderdetailData.items[0].product.shippings[0].shipping.price}} บาท</span>
-        <span class="detail-textHeader"> ระยะเวลา {{orderdetailData.items[0].product.shippings[0].shipping.days}} วัน</span>
+        <span class="detail-textHeader">  {{orderdetailData.items[indexItem].product.shippings[0].shipping.detail}} </span>
+        <span class="detail-textHeader"> ค่าจัดส่ง {{orderdetailData.items[indexItem].product.shippings[0].shipping.price}} บาท</span>
+        <span class="detail-textHeader"> ระยะเวลา {{orderdetailData.items[indexItem].product.shippings[0].shipping.days}} วัน</span>
 
 
       </div>
@@ -53,12 +53,12 @@
     <ion-item class="detail-item" *ngIf="orderdetailData.items && orderdetailData.items.length > 0">
       <h3 class="categories-title-pomotion">
         <ion-icon name="ios-cash"></ion-icon> {{'Delivery' | translate}}</h3>
-        <div *ngIf="orderdetailData.shipping">
-          <span class="detail-textHeader">ที่อยู่ : {{orderdetailData.shipping.address}}</span>
-          <span class="detail-textHeader">  ตำบล {{orderdetailData.shipping.subdistrict}} </span>
-          <span class="detail-textHeader"> อำเภอ {{orderdetailData.shipping.district}} </span>
-          <span class="detail-textHeader"> จังหวัด {{orderdetailData.shipping.province}} </span>
-          <span class="detail-textHeader"> รหัสไปรษณีย์ {{orderdetailData.shipping.postcode}} </span>
+      <div *ngIf="orderdetailData.shipping">
+        <span class="detail-textHeader">ที่อยู่ : {{orderdetailData.shipping.address}}</span>
+        <span class="detail-textHeader">  ตำบล {{orderdetailData.shipping.subdistrict}} </span>
+        <span class="detail-textHeader"> อำเภอ {{orderdetailData.shipping.district}} </span>
+        <span class="detail-textHeader"> จังหวัด {{orderdetailData.shipping.province}} </span>
+        <span class="detail-textHeader"> รหัสไปรษณีย์ {{orderdetailData.shipping.postcode}} </span>
       </div>
     </ion-item>
 
@@ -78,3 +78,11 @@
     </ion-item>
   </ion-list>
 </ion-content>
+<ion-footer>
+  <ion-row>
+    <ion-col>
+    </ion-col>
+  </ion-row>
+  <button ion-button block (click)="updateStatus(orderdetailData.items[indexItem].status)">{{statusTab === 'waiting' ? 'Accept' : statusTab === 'accept' ? 'Sent': 'Progress..'}}</button>
+
+</ion-footer>

@@ -17,16 +17,14 @@ export class ListOrderComponent {
   @Input() status: string;
   @Output() itemClicked: EventEmitter<any> = new EventEmitter<any>();
   data: any = {
-    items: [],
-    shipping: {}
+    index: 0
   };
   constructor(public navCtrl: NavController) {
     console.log('Hello ListOrderComponent Component');
   }
-  selectOrder(item, shipping) {
-    this.data.items.push(item);
-    this.data.shipping = shipping;
-    console.log(this.data);
+  selectOrder(item, i) {
+    this.data = item;
+    this.data.index = i;
     // this.navCtrl.push(OrderDetailPage);
     this.itemClicked.emit(this.data);
   }
