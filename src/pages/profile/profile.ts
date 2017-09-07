@@ -29,6 +29,7 @@ export class ProfilePage {
   }
 
   editTel() {
+    this.tel = this.shop.tel ? this.shop.tel : '';
     this.edittel = true;
   }
 
@@ -37,7 +38,8 @@ export class ProfilePage {
     this.edittel = false;
   }
 
-  editMail() {
+  editEmail() {
+    this.email = this.shop.email ? this.shop.email : '';
     this.editemail = true;
   }
 
