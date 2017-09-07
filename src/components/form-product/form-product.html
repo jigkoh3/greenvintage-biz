@@ -13,20 +13,23 @@
             <ion-label floating>ราคา</ion-label>
             <ion-input type="number" [(ngModel)]="product.price" (ionChange)="createProducts()"></ion-input>
         </ion-item>
-        <ion-item>
+        <!-- <ion-item>
             <ion-label floating>รูปสินค้า</ion-label>
             <ion-input type="text" [(ngModel)]="image" (ionChange)="createProducts()"></ion-input>
-        </ion-item>
+        </ion-item> -->
         <ion-item>
             <ion-label floating>จัดส่งภายในกี่วัน</ion-label>
             <ion-input type="number" [(ngModel)]="product.preparedays" (ionChange)="createProducts()"></ion-input>
         </ion-item>
+
         <ion-item *ngIf="dataShipping && dataShipping.length > 0">
             <ion-label floating>วิธีการจัดส่ง</ion-label>
             <ion-select [(ngModel)]="shipping" (ionChange)="selectShipping(shipping)">
                 <ion-option *ngFor="let data of dataShipping" [value]="data">{{data.name}}</ion-option>
             </ion-select>
         </ion-item>
+
+
         <ion-item *ngIf="dataCate && dataCate.length > 0">
             <ion-label floating>ประเภทสินค้า</ion-label>
             <ion-select [(ngModel)]="product.category" (ionChange)="createProducts()">
@@ -49,6 +52,13 @@
                 <ion-option *ngFor="let data of dataShop" [value]="data">{{data.name}}</ion-option>
             </ion-select>
         </ion-item>
+
+        <ion-row>
+            <ion-col>
+                <h5>อัพโหลดรูปภาพ</h5>
+                <images-layout-upload-x [maxImage]="4" (imageOutList)="uploadImage($event)"></images-layout-upload-x>
+            </ion-col>
+        </ion-row>
         <!-- <ion-item>
             <ion-label>Issize</ion-label>
             <ion-checkbox [(ngModel)]="issize"></ion-checkbox>
