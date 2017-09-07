@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
 import { OrderdetailserviceProvider } from "./order-detail.service";
 import { OrderDetailModel } from "./order-detail.model";
 
@@ -16,17 +16,87 @@ import { OrderDetailModel } from "./order-detail.model";
 })
 export class OrderDetailPage {
   orderdetailData: OrderDetailModel = new OrderDetailModel;
+  indexItem: any = 0;
+  statusTab: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider) {
-  this.orderdetailData = navParams.get('items');
-}
+  constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider, public alertCtrl: AlertController) {
+    this.orderdetailData = navParams.get('items');
+    this.indexItem = navParams.get('index');
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderDetailPage');
+    console.log(this.orderdetailData);
+    this.statusTab = this.orderdetailData.items[this.indexItem].status;
     // this.orderdetailserviceProvider.getData().then(data => {
     //   this.orderdetailData = data;
     //   console.log(data);
     // })
+  }
+
+  showPrompt() {
+    let prompt = this.alertCtrl.create({
+      title: 'Ref. ID',
+      message: "Please Enter Your Ref. ID",
+      inputs: [
+        {
+          name: 'refid',
+          placeholder: 'Ref. ID'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          handler: data => {
+            console.log('Cancel clicked');
+          }
+        },
+        {
+          text: 'Submit',
+          handler: data => {
+            this.orderdetailData.items[this.indexItem].status = 'sent';
+            this.updateOrder(this.orderdetailData);
+          }
+        }
+      ]
+    });
+    prompt.present();
+  }
+
+  updateStatus(status) {
+    var updateStatus = '';
+    if (status === 'waiting') {
+      updateStatus = 'accept';
+    } else if (status === 'accept') {
+      updateStatus = 'sent';
+    } else {
+      updateStatus = status;
+    }
+    if (status === 'accept') {
+      this.showPrompt();
+    } else {
+      this.orderdetailData.items[this.indexItem].status = updateStatus;
+      // console.log(this.orderdetailData);
+      this.updateOrder(this.orderdetailData);
+    }
+
+    // this.orderdetailserviceProvider
+    //   .updateStatusOrder(this.orderdetailData)
+    //   .then((data) => {
+    //     this.navCtrl.pop();
+    //   }, (err) => {
+    //     console.log(err);
+    //   });
+  }
+
+  updateOrder(data) {
+    this.orderdetailserviceProvider
+      .updateStatusOrder(this.orderdetailData)
+      .then((data) => {
+        this.navCtrl.pop();
+      }, (err) => {
+        console.log(err);
+      });
   }
 
 }
