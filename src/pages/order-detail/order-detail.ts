@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, AlertController, LoadingController } from 'ionic-angular';
 import { OrderdetailserviceProvider } from "./order-detail.service";
 import { OrderDetailModel } from "./order-detail.model";
 
@@ -19,7 +19,7 @@ export class OrderDetailPage {
   indexItem: any = 0;
   statusTab: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider, public alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider, public alertCtrl: AlertController, public loading: LoadingController) {
     this.orderdetailData = navParams.get('items');
     this.indexItem = navParams.get('index');
   }
@@ -69,6 +69,8 @@ export class OrderDetailPage {
       updateStatus = 'accept';
     } else if (status === 'accept') {
       updateStatus = 'sent';
+    } else if (status === 'sent') {
+      updateStatus = 'complete';
     } else {
       updateStatus = status;
     }
@@ -76,7 +78,7 @@ export class OrderDetailPage {
       this.showPrompt();
     } else {
       this.orderdetailData.items[this.indexItem].status = updateStatus;
-      // console.log(this.orderdetailData);
+      console.log(this.orderdetailData);
       this.updateOrder(this.orderdetailData);
     }
 
@@ -96,12 +98,16 @@ export class OrderDetailPage {
   }
 
   updateOrder(data) {
+    let loading = this.loading.create();
+    loading.present();
     this.orderdetailserviceProvider
       .updateStatusOrder(this.orderdetailData)
       .then((data) => {
         this.navCtrl.pop();
+        loading.dismiss();
       }, (err) => {
         console.log(err);
+        loading.dismiss();
       });
   }
 

@@ -27,10 +27,14 @@ export class LoginPage {
 
   doLogin() {
     this.credential = this.login.value;
+    let loading = this.loadingCtrl.create();
+    loading.present();
     this.loginServiceProvider.onAuthorization(this.credential).then((data) => {
       this.navCtrl.setRoot(TabsNavigationPage);
+      loading.dismiss();
     }, (error) => {
       console.error(error);
+      loading.dismiss();
     });
   }
 
