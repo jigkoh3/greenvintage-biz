@@ -17,17 +17,16 @@ import { OrderDetailModel } from "./order-detail.model";
 export class OrderDetailPage {
   orderdetailData: OrderDetailModel = new OrderDetailModel;
   indexItem: any = 0;
-  statusTab: string;
+  statusTab: string = '';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider, public alertCtrl: AlertController, public loading: LoadingController) {
     this.orderdetailData = navParams.get('items');
-    this.indexItem = navParams.get('index');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderDetailPage');
     console.log(this.orderdetailData);
-    this.statusTab = this.orderdetailData.items[this.indexItem].status;
+    this.statusTab = this.orderdetailData.items.status;
     // this.orderdetailserviceProvider.getData().then(data => {
     //   this.orderdetailData = data;
     //   console.log(data);
@@ -77,7 +76,7 @@ export class OrderDetailPage {
     if (status === 'accept') {
       this.showPrompt();
     } else {
-      this.orderdetailData.items[this.indexItem].status = updateStatus;
+      this.orderdetailData.items.status = updateStatus;
       console.log(this.orderdetailData);
       this.updateOrder(this.orderdetailData);
     }
@@ -92,16 +91,17 @@ export class OrderDetailPage {
   }
 
   updateStatusReject() {
-    this.orderdetailData.items[this.indexItem].status = 'reject';
+    this.orderdetailData.items.status = 'reject';
     // console.log(this.orderdetailData);
     this.updateOrder(this.orderdetailData);
   }
 
   updateOrder(data) {
+    // console.log(this.orderdetailData);
     let loading = this.loading.create();
     loading.present();
     this.orderdetailserviceProvider
-      .updateStatusOrder(this.orderdetailData)
+      .updateStatusOrder(this.orderdetailData, this.orderdetailData.items)
       .then((data) => {
         this.navCtrl.pop();
         loading.dismiss();

@@ -24,8 +24,8 @@ export class OrderdetailserviceProvider {
 
   }
 
-  updateStatusOrder(order): Promise<OrderDetailModel> {
-    return this.http.put('https://greenvintage.herokuapp.com/api/ordermasters/' + order._id, order)
+  updateStatusOrder(order, item): Promise<OrderDetailModel> {
+    return this.http.put('https://greenvintage.herokuapp.com/api/ordermasters/' + order._id, item)
       .toPromise()
       .then(resp => resp.json() as OrderDetailModel)
       .catch(err => Promise.reject(err.message || err));

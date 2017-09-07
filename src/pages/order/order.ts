@@ -16,7 +16,7 @@ import { OrderDetailPage } from '../../pages/order-detail/order-detail';
   templateUrl: 'order.html',
 })
 export class OrderPage {
-  orderlistData: Array<OrderModel>;
+  orderlistData: OrderModel = new OrderModel();
   channel: number = 1;
 
   steps: Array<any> = [
@@ -54,7 +54,7 @@ export class OrderPage {
   }
   selectedItem(e) {
     // console.log(e);
-    this.navCtrl.push(OrderDetailPage, { items: e, index: e.index });
+    this.navCtrl.push(OrderDetailPage, { items: e });
     // alert(e);
   }
 

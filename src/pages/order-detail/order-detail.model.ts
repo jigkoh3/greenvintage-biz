@@ -1,24 +1,21 @@
+// export class OrderDetailModel {
+//     _id: string;
+//     created: string;
+//     status: string;
+//     shipping: Shipping = new Shipping();
+//     user: UserModel = new UserModel();
+//     items: Array<Items>;
+//     amount: number;
+//     discount: number;
+//     totalamount: number;
+//     cart: string;
+//     payment: payment = new payment();
+// }
+
 export class OrderDetailModel {
     _id: string;
-    created: string;
-    status: string;
     shipping: Shipping = new Shipping();
-    user: UserModel = new UserModel();
-    items: Array<Items>;
-    amount: number;
-    discount: number;
-    totalamount: number;
-    cart: string;
-    payment: payment = new payment();
-}
-
-export class payment {
-    paymenttype: string;
-    counterservice: string;
-    creditno: string;
-    creditname: string;
-    expdate: string;
-    creditcvc: string;
+    items: Items = new Items();
 }
 
 export class Items {
@@ -30,6 +27,25 @@ export class Items {
     size: string;
     status: string;
 }
+
+export class payment {
+    paymenttype: string;
+    counterservice: string;
+    creditno: string;
+    creditname: string;
+    expdate: string;
+    creditcvc: string;
+}
+
+// export class Items {
+//     _id: string;
+//     delivery: Delivery = new Delivery();
+//     product: Product = new Product();
+//     amount: number;
+//     qty: number;
+//     size: string;
+//     status: string;
+// }
 export class Product {
     _id: string;
     price: number;
@@ -50,6 +66,7 @@ export class Image {
 }
 
 export class Shipping {
+    _id: string;
     firstname: string;
     lastname: string;
     tel: string;

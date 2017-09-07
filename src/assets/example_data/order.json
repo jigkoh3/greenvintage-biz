@@ -1,34 +1,14 @@
-[
-    {
-        "_id": "59af742be20930c8298b14f9",
-        "shipping": {
-            "_id": "59af742ae20930c8298b14ee",
-            "firstname": "getorder",
-            "lastname": "getorder",
-            "tel": "tel",
-            "address": "getorder",
-            "subdistrict": "subdistrict",
-            "district": "district",
-            "province": "province",
-            "postcode": "postcode",
-            "__v": 0,
-            "created": "2017-09-06T04:06:02.173Z"
-        },
-        "user": {
-            "_id": "59af742ae20930c8298b14f1",
-            "displayName": "getorder getorder"
-        },
-        "__v": 0,
-        "created": "2017-09-06T04:06:03.210Z",
-        "status": "paid",
-        "items": [
-            {
+{
+    "waiting": [
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
                 "product": {
                     "_id": "59af742ae20930c8298b14f4",
                     "name": "Productmaster getorder",
                     "price": 1234,
                     "shop": {
-                        "_id": "59af742ae20930c8298b14ef",
+                        "_id": "59b1210579ac93110092edfc",
                         "detail": "Shop getorder",
                         "email": "getorder@email.com",
                         "tel": "0999999999",
@@ -89,43 +69,30 @@
                 },
                 "_id": "59af742be20930c8298b14fa",
                 "status": "waiting"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
             }
-        ],
-        "amount": 1234,
-        "discount": 234,
-        "totalamount": 1000,
-        "cart": "59af742ae20930c8298b14f7"
-    },
-    {
-        "_id": "59af742be20930c8298b14f9",
-        "shipping": {
-            "_id": "59af742ae20930c8298b14ee",
-            "firstname": "getorder",
-            "lastname": "getorder",
-            "tel": "tel",
-            "address": "getorder",
-            "subdistrict": "subdistrict",
-            "district": "district",
-            "province": "province",
-            "postcode": "postcode",
-            "__v": 0,
-            "created": "2017-09-06T04:06:02.173Z"
         },
-        "user": {
-            "_id": "59af742ae20930c8298b14f1",
-            "displayName": "getorder getorder"
-        },
-        "__v": 0,
-        "created": "2017-09-06T04:06:03.210Z",
-        "status": "paid",
-        "items": [
-            {
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
                 "product": {
                     "_id": "59af742ae20930c8298b14f4",
                     "name": "Productmaster getorder",
                     "price": 1234,
                     "shop": {
-                        "_id": "59af742ae20930c8298b14ef",
+                        "_id": "59b1210579ac93110092edfc",
                         "detail": "Shop getorder",
                         "email": "getorder@email.com",
                         "tel": "0999999999",
@@ -186,43 +153,32 @@
                 },
                 "_id": "59af742be20930c8298b14fa",
                 "status": "waiting"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
             }
-        ],
-        "amount": 1234,
-        "discount": 234,
-        "totalamount": 1000,
-        "cart": "59af742ae20930c8298b14f7"
-    },
-    {
-        "_id": "59af742be20930c8298b14f9",
-        "shipping": {
-            "_id": "59af742ae20930c8298b14ee",
-            "firstname": "getorder",
-            "lastname": "getorder",
-            "tel": "tel",
-            "address": "getorder",
-            "subdistrict": "subdistrict",
-            "district": "district",
-            "province": "province",
-            "postcode": "postcode",
-            "__v": 0,
-            "created": "2017-09-06T04:06:02.173Z"
-        },
-        "user": {
-            "_id": "59af742ae20930c8298b14f1",
-            "displayName": "getorder getorder"
-        },
-        "__v": 0,
-        "created": "2017-09-06T04:06:03.210Z",
-        "status": "paid",
-        "items": [
-            {
+        }
+    ],
+    "accept": [
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
                 "product": {
                     "_id": "59af742ae20930c8298b14f4",
                     "name": "Productmaster getorder",
                     "price": 1234,
                     "shop": {
-                        "_id": "59af742ae20930c8298b14ef",
+                        "_id": "59b1210579ac93110092edfc",
                         "detail": "Shop getorder",
                         "email": "getorder@email.com",
                         "tel": "0999999999",
@@ -263,7 +219,7 @@
                     ],
                     "image": [
                         {
-                            "url": "http://www.limstreet.com/wp-content/uploads/2017/04/BY3035_PRFTWSTBBG_001_FI-e1491407053798-1024x737.jpg",
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
                             "_id": "59af742ae20930c8298b14f6"
                         }
                     ]
@@ -283,43 +239,30 @@
                 },
                 "_id": "59af742be20930c8298b14fa",
                 "status": "accept"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
             }
-        ],
-        "amount": 1234,
-        "discount": 234,
-        "totalamount": 1000,
-        "cart": "59af742ae20930c8298b14f7"
-    },
-    {
-        "_id": "59af742be20930c8298b14f9",
-        "shipping": {
-            "_id": "59af742ae20930c8298b14ee",
-            "firstname": "getorder",
-            "lastname": "getorder",
-            "tel": "tel",
-            "address": "getorder",
-            "subdistrict": "subdistrict",
-            "district": "district",
-            "province": "province",
-            "postcode": "postcode",
-            "__v": 0,
-            "created": "2017-09-06T04:06:02.173Z"
         },
-        "user": {
-            "_id": "59af742ae20930c8298b14f1",
-            "displayName": "getorder getorder"
-        },
-        "__v": 0,
-        "created": "2017-09-06T04:06:03.210Z",
-        "status": "paid",
-        "items": [
-            {
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
                 "product": {
                     "_id": "59af742ae20930c8298b14f4",
                     "name": "Productmaster getorder",
                     "price": 1234,
                     "shop": {
-                        "_id": "59af742ae20930c8298b14ef",
+                        "_id": "59b1210579ac93110092edfc",
                         "detail": "Shop getorder",
                         "email": "getorder@email.com",
                         "tel": "0999999999",
@@ -360,7 +303,7 @@
                     ],
                     "image": [
                         {
-                            "url": "http://www.limstreet.com/wp-content/uploads/2017/04/BY3035_PRFTWSTBBG_001_FI-e1491407053798-1024x737.jpg",
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
                             "_id": "59af742ae20930c8298b14f6"
                         }
                     ]
@@ -379,12 +322,361 @@
                     "created": "2017-09-06T04:06:02.178Z"
                 },
                 "_id": "59af742be20930c8298b14fa",
-                "status": "reject"
+                "status": "accept"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
             }
-        ],
-        "amount": 1234,
-        "discount": 234,
-        "totalamount": 1000,
-        "cart": "59af742ae20930c8298b14f7"
-    }
-]
+        }
+    ],
+    "sent": [
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59b1210579ac93110092edfc",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "sent"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
+            }
+        },
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59b1210579ac93110092edfc",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "sent"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
+            }
+        }
+    ],
+    "return": [
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59b1210579ac93110092edfc",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "return"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
+            }
+        },
+        {
+            "_id": "59af742be20930c8298b14f9",
+            "items": {
+                "product": {
+                    "_id": "59af742ae20930c8298b14f4",
+                    "name": "Productmaster getorder",
+                    "price": 1234,
+                    "shop": {
+                        "_id": "59b1210579ac93110092edfc",
+                        "detail": "Shop getorder",
+                        "email": "getorder@email.com",
+                        "tel": "0999999999",
+                        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                        "__v": 0,
+                        "created": "2017-09-06T04:06:02.175Z",
+                        "sellerSummary": 0,
+                        "map": {
+                            "lat": "1000",
+                            "lng": "1000"
+                        },
+                        "name": "Shopmaster getorder"
+                    },
+                    "category": {
+                        "_id": "59af742ae20930c8298b14f3",
+                        "__v": 0,
+                        "parent": "00",
+                        "created": "2017-09-06T04:06:02.179Z",
+                        "detail": "getorder",
+                        "name": "getorder"
+                    },
+                    "created": "2017-09-06T04:06:02.180Z",
+                    "sellerSummary": 0,
+                    "shippings": [
+                        {
+                            "shipping": {
+                                "_id": "59af742ae20930c8298b14f2",
+                                "name": "ส่งธรรมดา",
+                                "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                                "days": 7,
+                                "price": 0,
+                                "user": "59af742ae20930c8298b14f1",
+                                "__v": 0,
+                                "created": "2017-09-06T04:06:02.178Z"
+                            },
+                            "_id": "59af742ae20930c8298b14f5"
+                        }
+                    ],
+                    "image": [
+                        {
+                            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+                            "_id": "59af742ae20930c8298b14f6"
+                        }
+                    ]
+                },
+                "qty": 1,
+                "amount": 1234,
+                "size": "S",
+                "delivery": {
+                    "_id": "59af742ae20930c8298b14f2",
+                    "name": "ส่งธรรมดา",
+                    "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+                    "days": 7,
+                    "price": 0,
+                    "user": "59af742ae20930c8298b14f1",
+                    "__v": 0,
+                    "created": "2017-09-06T04:06:02.178Z"
+                },
+                "_id": "59af742be20930c8298b14fa",
+                "status": "return"
+            },
+            "shipping": {
+                "_id": "59af742ae20930c8298b14ee",
+                "firstname": "getorder",
+                "lastname": "getorder",
+                "tel": "tel",
+                "address": "getorder",
+                "subdistrict": "subdistrict",
+                "district": "district",
+                "province": "province",
+                "postcode": "postcode",
+                "__v": 0,
+                "created": "2017-09-06T04:06:02.173Z"
+            }
+        }
+    ]
+}
