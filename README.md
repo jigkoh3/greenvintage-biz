@@ -24,3 +24,5 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
+npm install --save @ionic-native/base64
+cordova plugin add com-badrit-base64

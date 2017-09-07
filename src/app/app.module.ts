@@ -93,6 +93,8 @@ import { OrderdetailserviceProvider } from "../pages/order-detail/order-detail.s
 import { CreateProductPage } from "../pages/create-product/create-product";
 import { FormProductComponent } from '../components/form-product/form-product';
 import { CreateProductServiceProvider } from "../pages/create-product/create-product.service";
+import { ImagesLayoutUploadXComponent } from "../components/images-layout-upload-x/images-layout-upload-x";
+import { Base64 } from "@ionic-native/base64";
 
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -134,7 +136,8 @@ export function createTranslateLoader(http: Http) {
     ListItemsComponent,
     ListNotificationComponent,
     CreateProductPage,
-    FormProductComponent
+    FormProductComponent,
+    ImagesLayoutUploadXComponent
     
   ],
   imports: [
@@ -188,6 +191,7 @@ export function createTranslateLoader(http: Http) {
     GooglePlus,
     Keyboard,
     Geolocation,
+    Base64,
     TwitterConnect,
 		AdMobFree,
 		AppRate,
