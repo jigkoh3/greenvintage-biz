@@ -89,6 +89,12 @@ export class OrderDetailPage {
     //   });
   }
 
+  updateStatusReject() {
+    this.orderdetailData.items[this.indexItem].status = 'reject';
+    // console.log(this.orderdetailData);
+    this.updateOrder(this.orderdetailData);
+  }
+
   updateOrder(data) {
     this.orderdetailserviceProvider
       .updateStatusOrder(this.orderdetailData)

@@ -9,5 +9,5 @@
   <list-order [items]="items" [status]="'sent'" (itemClicked)="getItem($event)" (click)="getOrder()"></list-order>
 </div>
 <div *ngIf="parent.channel == 4">
-  <list-order [items]="items" [status]="'reject'" (itemClicked)="getItem($event)" (click)="getOrder()"></list-order>
+  <list-order [items]="items" [status]="'return'" (itemClicked)="getItem($event)" (click)="getOrder()"></list-order>
 </div>

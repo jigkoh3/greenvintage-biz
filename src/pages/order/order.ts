@@ -35,7 +35,7 @@ export class OrderPage {
     ,
     {
       value: 4,
-      title: "Reject"
+      title: "Return"
     }
   ];
 

@@ -84,5 +84,6 @@
     </ion-col>
   </ion-row>
   <button ion-button block (click)="updateStatus(orderdetailData.items[indexItem].status)">{{statusTab === 'waiting' ? 'Accept' : statusTab === 'accept' ? 'Sent': 'Progress..'}}</button>
+  <button ion-button block color="danger" *ngIf="statusTab === 'waiting'" (click)="updateStatusReject()">Reject</button>
 
 </ion-footer>
