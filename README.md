@@ -24,5 +24,9 @@ $ ionic cordova run ios
 
 Substitute ios for android if not on a Mac.
 
-npm install --save @ionic-native/base64
+
 cordova plugin add com-badrit-base64
+$ npm install --save @ionic-native/base64
+
+cordova plugin add cordova-plugin-telerik-imagepicker --variable PHOTO_LIBRARY_USAGE_DESCRIPTION="your usage message"
+$ npm install --save @ionic-native/image-picker
