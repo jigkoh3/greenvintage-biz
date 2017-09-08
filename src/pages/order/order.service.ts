@@ -18,8 +18,8 @@ export class OrderServiceProvider {
   }
 
   getData() {
-    return this.http.get('https://greenvintage.herokuapp.com/api/orderlistbyshops')
-    // return this.http.get('./assets/example_data/order.json')
+    // return this.http.get('https://greenvintage.herokuapp.com/api/orderlistbyshops')
+    return this.http.get('./assets/example_data/order.json')
       .toPromise()
       .then(resp => resp.json())
       .catch(err => Promise.reject(err.message || err));

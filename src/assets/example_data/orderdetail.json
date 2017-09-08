@@ -1,5 +1,73 @@
 {
   "_id": "59af742be20930c8298b14f9",
+  "item": {
+    "product": {
+      "_id": "59af742ae20930c8298b14f4",
+      "name": "Productmaster getorder",
+      "price": 1234,
+      "shop": {
+        "_id": "59b1210579ac93110092edfc",
+        "detail": "Shop getorder",
+        "email": "getorder@email.com",
+        "tel": "0999999999",
+        "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+        "__v": 0,
+        "created": "2017-09-06T04:06:02.175Z",
+        "sellerSummary": 0,
+        "map": {
+          "lat": "1000",
+          "lng": "1000"
+        },
+        "name": "Shopmaster getorder"
+      },
+      "category": {
+        "_id": "59af742ae20930c8298b14f3",
+        "__v": 0,
+        "parent": "00",
+        "created": "2017-09-06T04:06:02.179Z",
+        "detail": "getorder",
+        "name": "getorder"
+      },
+      "created": "2017-09-06T04:06:02.180Z",
+      "sellerSummary": 0,
+      "shippings": [
+        {
+          "shipping": {
+            "_id": "59af742ae20930c8298b14f2",
+            "name": "ส่งธรรมดา",
+            "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+            "days": 7,
+            "price": 0,
+            "user": "59af742ae20930c8298b14f1",
+            "__v": 0,
+            "created": "2017-09-06T04:06:02.178Z"
+          },
+          "_id": "59af742ae20930c8298b14f5"
+        }
+      ],
+      "image": [
+        {
+          "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+          "_id": "59af742ae20930c8298b14f6"
+        }
+      ]
+    },
+    "qty": 1,
+    "amount": 1234,
+    "size": "S",
+    "delivery": {
+      "_id": "59af742ae20930c8298b14f2",
+      "name": "ส่งธรรมดา",
+      "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
+      "days": 7,
+      "price": 0,
+      "user": "59af742ae20930c8298b14f1",
+      "__v": 0,
+      "created": "2017-09-06T04:06:02.178Z"
+    },
+    "_id": "59af742be20930c8298b14fa",
+    "status": "return"
+  },
   "shipping": {
     "_id": "59af742ae20930c8298b14ee",
     "firstname": "getorder",
@@ -12,82 +80,5 @@
     "postcode": "postcode",
     "__v": 0,
     "created": "2017-09-06T04:06:02.173Z"
-  },
-  "user": {
-    "_id": "59af742ae20930c8298b14f1",
-    "displayName": "getorder getorder"
-  },
-  "__v": 0,
-  "created": "2017-09-06T04:06:03.210Z",
-  "status": "paid",
-  "items": [
-    {
-      "product": {
-        "_id": "59af742ae20930c8298b14f4",
-        "name": "Productmaster getorder",
-        "price": 1234,
-        "shop": {
-          "_id": "59af742ae20930c8298b14ef",
-          "detail": "Shop getorder",
-          "email": "getorder@email.com",
-          "tel": "0999999999",
-          "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
-          "__v": 0,
-          "created": "2017-09-06T04:06:02.175Z",
-          "sellerSummary": 0,
-          "map": {
-            "lat": "1000",
-            "lng": "1000"
-          },
-          "name": "Shopmaster getorder"
-        },
-        "category": {
-          "_id": "59af742ae20930c8298b14f3",
-          "__v": 0,
-          "parent": "00",
-          "created": "2017-09-06T04:06:02.179Z",
-          "detail": "getorder",
-          "name": "getorder"
-        },
-        "created": "2017-09-06T04:06:02.180Z",
-        "sellerSummary": 0,
-        "shippings": [
-          {
-            "shipping": {
-              "_id": "59af742ae20930c8298b14f2",
-              "name": "ส่งธรรมดา",
-              "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
-              "days": 7,
-              "price": 0,
-              "user": "59af742ae20930c8298b14f1",
-              "__v": 0,
-              "created": "2017-09-06T04:06:02.178Z"
-            },
-            "_id": "59af742ae20930c8298b14f5"
-          }
-        ],
-        "image": [
-          {
-            "url": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
-            "_id": "59af742ae20930c8298b14f6"
-          }
-        ]
-      },
-      "qty": 1,
-      "amount": 1234,
-      "size": "S",
-      "delivery": {
-        "_id": "59af742ae20930c8298b14f2",
-        "name": "ส่งธรรมดา",
-        "detail": "ส่งธรรมดาผ่านไปรษณีย์ (ฟรี)",
-        "days": 7,
-        "price": 0,
-        "user": "59af742ae20930c8298b14f1",
-        "__v": 0,
-        "created": "2017-09-06T04:06:02.178Z"
-      },
-      "_id": "59af742be20930c8298b14fa",
-      "status": "accept"
-    }
-  ]
+  }
 }

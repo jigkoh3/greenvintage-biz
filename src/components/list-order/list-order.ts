@@ -16,15 +16,20 @@ export class ListOrderComponent {
   @Input() items: any;
   @Input() status: string;
   @Output() itemClicked: EventEmitter<any> = new EventEmitter<any>();
-  data: any = {
-    index: 0
+  data: any = {};
+
+  user: any = {
+    shop: {
+      _id: ''
+    }
   };
   constructor(public navCtrl: NavController) {
     console.log('Hello ListOrderComponent Component');
+    this.user = JSON.parse(window.localStorage.getItem('user'));
+    // console.log(this.items);
   }
   selectOrder(item, i) {
     this.data = item;
-    this.data.index = i;
     // this.navCtrl.push(OrderDetailPage);
     this.itemClicked.emit(this.data);
   }

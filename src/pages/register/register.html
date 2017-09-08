@@ -10,7 +10,7 @@
       <h2 class="auth-title">{{'CREATE_AN_ACCOUNT' | translate}}</h2>
       <form class="signup-form auth-form" [formGroup]="signup">
         <ion-item>
-          <ion-input type="username" placeholder="username" formControlName="username"></ion-input>
+          <ion-input type="text" placeholder="username" formControlName="username"></ion-input>
         </ion-item>
         <show-hide-container>
           <ion-item>
@@ -23,16 +23,16 @@
           </ion-item>
         </show-hide-container>
         <ion-item>
-          <ion-input type="firstName" placeholder="firstname" formControlName="firstName"></ion-input>
+          <ion-input type="text" placeholder="firstname" formControlName="firstName"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input type="lastName" placeholder="lastname" formControlName="lastName"></ion-input>
+          <ion-input type="text" placeholder="lastname" formControlName="lastName"></ion-input>
         </ion-item>
         <ion-item>
           <ion-input type="email" placeholder="email" formControlName="email"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-input type="tel" placeholder="tel" formControlName="tel"></ion-input>
+          <ion-input type="text" placeholder="tel" formControlName="tel"></ion-input>
         </ion-item>
         <button ion-button block class="auth-action-button signup-button" (click)="goToNextStep2()" [disabled]="!signup.valid">NEXT</button>
       </form>

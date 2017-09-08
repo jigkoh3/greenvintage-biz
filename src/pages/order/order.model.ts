@@ -1,15 +1,14 @@
 export class OrderModel {
+    waiting: Array<Order>;
+    accept: Array<Order>;
+    sent: Array<Order>;
+    return: Array<Order>;
+
+}
+export class Order {
     _id: string;
-    created: string;
-    status: string;
     shipping: Shipping = new Shipping();
-    user: UserModel = new UserModel();
-    items: Array<Items>;
-    amount: number;
-    discount: number;
-    totalamount: number;
-    cart: string;
-    payment: payment = new payment();
+    items: Items = new Items();
 
 }
 
@@ -93,6 +92,7 @@ export class ShippingsModel {
     shipping: Shippings = new Shippings();
 }
 export class ShopModel {
+    _id: string;
     name: string;
     detail: string;
     email: string;

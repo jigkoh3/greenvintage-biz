@@ -2,6 +2,14 @@
 
   <ion-navbar>
     <ion-title>Shop Detail</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only *ngIf="!actionEdit" (click)="editProfile()">
+          <ion-icon name="build"></ion-icon>
+        </button>
+        <button ion-button icon-only *ngIf="actionEdit" (click)="saveProfile()">
+            <ion-icon name="checkmark"></ion-icon>
+          </button>
+      </ion-buttons>
   </ion-navbar>
 
 </ion-header>
@@ -15,23 +23,15 @@
       <ion-avatar item-left>
         <ion-icon name="call"></ion-icon>
       </ion-avatar>
-      <span class="detail-text" *ngIf="!edittel">{{tel}}</span>
-      <ion-input type="text" placeholder="tel" *ngIf="edittel" [(ngModel)]="tel"></ion-input>
-      <span class="edit-btn">
-        <ion-icon name="build" (click)="editTel()" *ngIf="!edittel"></ion-icon>
-        <ion-icon name="checkmark" (click)="saveTel()" *ngIf="edittel"></ion-icon>        
-      </span>
+      <span class="detail-text" *ngIf="!actionEdit">{{tel}}</span>
+      <ion-input type="text" placeholder="tel" *ngIf="actionEdit" [(ngModel)]="tel"></ion-input>
     </ion-item>
     <ion-item class="detail-item">
       <ion-avatar item-left>
         <ion-icon name="mail"></ion-icon>
       </ion-avatar>
-      <span class="detail-text" *ngIf="!editemail">{{email}}</span>
-      <ion-input type="text" style="width:46px" placeholder="email" *ngIf="editemail" [(ngModel)]="email"></ion-input>
-      <span class="edit-btn">
-        <ion-icon name="build" *ngIf="!editemail" (click)="editEmail()"></ion-icon>
-        <ion-icon name="checkmark" *ngIf="editemail" (click)="saveEmail()"></ion-icon>
-      </span>
+      <span class="detail-text" *ngIf="!actionEdit">{{email}}</span>
+      <ion-input type="text" style="width:46px" placeholder="email" *ngIf="actionEdit" [(ngModel)]="email"></ion-input>
     </ion-item>
   </ion-list>
 </ion-content>
