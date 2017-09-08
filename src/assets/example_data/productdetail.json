@@ -1,8 +1,9 @@
 {
-    "id": "product001",
-    "name": "NIKE",
-    "detail": "All item(s) will be shipped",
-    "unitprice": 100,
+    "product_id": "product001",
+    "name":"Product1",
+    "detail": "product1 detail",
+    "price": 70,
+    "rate": 5,
     "image": [
         {
             "url": "https://assets.wired.com/photos/w_1534/wp-content/uploads/2016/09/ff_nike-hyperadapt_angle_front.jpg",
@@ -23,7 +24,6 @@
             "rate": 1.5
         }
     ],
-    "rate": 4.5,
     "qa": [
         {
             "question": "Qa question 1",
@@ -41,13 +41,6 @@
             "code": "promotion 1"
         }
     ],
-    "favorite": [
-        {
-            "customerid": "xxx",
-            "favdate": "2017-08-05T14:05:59"
-        }
-    ],
-    "historyLog": [],
     "stock": {
         "stockvalue": [
             {
@@ -59,7 +52,6 @@
         "sumout": 10,
         "amount": 10
     },
-    "qty": 40,
     "issize": true,
     "size": {
         "detail": "https://scontent-sea1-1.cdninstagram.com/t51.2885-15/s480x480/e35/13636041_639744079526778_1585487380_n.jpg?ig_cache_key=MTI5NDE4MDYzNTI4Nzk4NDAwNQ%3D%3D.2",
@@ -120,10 +112,6 @@
             "shipping": "ส่งแบบธรรมดา: ฟรี"
         }
     ],
-    "shop": {
-        "shop": "Adidas Thailand",
-        "rate": 4
-    },
     "relationProducts": [
         {
             "name": "NIKE",

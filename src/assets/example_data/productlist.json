@@ -1,124 +1,44 @@
-[
-  {
-    "_id": "59afd4fc235b1e10002a3c56",
-    "name": "product1",
-    "detail": "product1 detail",
-    "price": 70,
-    "preparedays": 7,
-    "category": "59af83f8e8fbbb3fecd0538f",
-    "issize": true,
-    "size": {
-      "detail": "US",
-      "sizedetail": [
-        {
-          "name": "S",
-          "_id": "59af9b7d4eb4c01441a4d5ae"
-        },
-        {
-          "name": "M",
-          "_id": "59af9b7d4eb4c01441a4d5ad"
-        },
-        {
-          "name": "L",
-          "_id": "59af9b7d4eb4c01441a4d5ac"
-        },
-        {
-          "name": "XL",
-          "_id": "59af9b7d4eb4c01441a4d5ab"
-        }
-      ]
-    },
-    "shop": {
-      "_id": "59af742ae20930c8298b14ef",
-      "detail": "Shop getorder",
-      "email": "getorder@email.com",
-      "tel": "0999999999",
+{
+  "items": [
+    {
+      "product_id": "59afd4fc235b1e10002a3c56",
+      "name": "product1",
+      "detail": "product1 detail",
+      "price": 70,
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
-      "__v": 0,
-      "created": "2017-09-06T04:06:02.175Z",
-      "sellerSummary": 0,
-      "map": {
-        "lat": "1000",
-        "lng": "1000"
-      },
-      "name": "Shopmaster getorder"
+      "rate": 5
     },
-    "sellerSummary": 0,
-    "sellerlog": [],
-    "shippings": [
-      {
-        "shipping": "59ae3228d9538db42029a7ad",
-        "_id": "59afd4fc235b1e10002a3c58"
-      }
-    ],
-    "historylog": [],
-    "favorite": [],
-    "image": [
-      {
-        "url": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-        "_id": "59afd4fc235b1e10002a3c57"
-      }
-    ]
-  },
-  {
-    "_id": "59afd4fc235b1e10002a3c57",
-    "name": "product2",
-    "detail": "product2 detail",
-    "price": 90,
-    "preparedays": 7,
-    "category": "59af83f8e8fbbb3fecd0538f",
-    "issize": true,
-    "size": {
-      "detail": "US",
-      "sizedetail": [
-        {
-          "name": "S",
-          "_id": "59af9b7d4eb4c01441a4d5ae"
-        },
-        {
-          "name": "M",
-          "_id": "59af9b7d4eb4c01441a4d5ad"
-        },
-        {
-          "name": "L",
-          "_id": "59af9b7d4eb4c01441a4d5ac"
-        },
-        {
-          "name": "XL",
-          "_id": "59af9b7d4eb4c01441a4d5ab"
-        }
-      ]
-    },
-    "shop": {
-      "_id": "59af742ae20930c8298b14ef",
-      "detail": "Shop getorder",
-      "email": "getorder@email.com",
-      "tel": "0999999999",
+    {
+      "product_id": "59afd4fc235b1e10002a3c57",
+      "name": "product2",
+      "detail": "product1 detail2",
+      "price": 259,
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
-      "__v": 0,
-      "created": "2017-09-06T04:06:02.175Z",
-      "sellerSummary": 0,
-      "map": {
-        "lat": "1000",
-        "lng": "1000"
-      },
-      "name": "Shopmaster getorder"
+      "rate": 4
     },
-    "sellerSummary": 0,
-    "sellerlog": [],
-    "shippings": [
-      {
-        "shipping": "59ae3228d9538db42029a7ad",
-        "_id": "59afd4fc235b1e10002a3c58"
-      }
-    ],
-    "historylog": [],
-    "favorite": [],
-    "image": [
-      {
-        "url": "https://images-eu.ssl-images-amazon.com/images/G/02/AMAZON-FASHION/2016/SHOES/SPORT/MISC/Nikemobilefootball",
-        "_id": "59afd4fc235b1e10002a3c57"
-      }
-    ]
-  }
-]
+    {
+      "product_id": "59afd4fc235b1e10002a3c58",
+      "name": "product3",
+      "detail": "product1 detail3",
+      "price": 400,
+      "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+      "rate": 5
+    },
+    {
+      "product_id": "59afd4fc235b1e10002a3c59",
+      "name": "product4",
+      "detail": "product1 detail4",
+      "price": 899,
+      "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+      "rate": 4
+    },
+    {
+      "product_id": "59afd4fc235b1e10002a3c56",
+      "name": "product5",
+      "detail": "product1 detail5",
+      "price": 900,
+      "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
+      "rate": 5
+    }
+  ]
+}

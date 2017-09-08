@@ -18,7 +18,7 @@ import { ProductItemModel } from "../../app/app.model";
   templateUrl: 'product.html',
 })
 export class ProductPage {
-  productlistData: Array<ProductItemModel>;
+  productlistData: ProductModel = new ProductModel();
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public productserviceProvider: ProductserviceProvider) {
@@ -28,12 +28,12 @@ export class ProductPage {
     console.log('ionViewDidLoad ProductPage');
     this.productserviceProvider.getData().then(data => {
       this.productlistData = data;
-      // console.log(data);
+      console.log(this.productlistData);
     })
   }
   selectedItem(e) {
     console.log(e);
-    this.navCtrl.push(ProductDetailPage, { product: e });
+    this.navCtrl.push(ProductDetailPage, { product_id: e });
   }
 
   createProduct() {

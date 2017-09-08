@@ -16,7 +16,7 @@ export class ProductDetailServiceProvider {
   constructor(public http: Http) {
   
   }
-  getProductDetail(): Promise<ProductDetailModel> {
+  getProductDetail(productID): Promise<ProductDetailModel> {
     return this.http.get('./assets/example_data/productdetail.json')
       .toPromise()
       .then(response => response.json() as ProductDetailModel)
