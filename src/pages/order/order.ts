@@ -18,7 +18,7 @@ import { OrderDetailPage } from '../../pages/order-detail/order-detail';
 export class OrderPage {
   orderlistData: Array<OrderModel>;
   channel: number = 1;
-  
+
   steps: Array<any> = [
     {
       value: 1,
@@ -26,11 +26,16 @@ export class OrderPage {
     },
     {
       value: 2,
-      title: "Sent"
+      title: "Accept"
     },
     {
       value: 3,
-      title: "Reject"
+      title: "Sent"
+    }
+    ,
+    {
+      value: 4,
+      title: "Return"
     }
   ];
 
@@ -47,9 +52,9 @@ export class OrderPage {
       console.log(this.orderlistData);
     })
   }
-   selectedItem(e){
-     console.log(e);
-    this.navCtrl.push(OrderDetailPage, {items:e});
+  selectedItem(e) {
+    // console.log(e);
+    this.navCtrl.push(OrderDetailPage, { items: e, index: e.index });
     // alert(e);
   }
 

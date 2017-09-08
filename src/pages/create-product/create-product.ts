@@ -54,6 +54,7 @@ export class CreateProductPage {
       this.navCtrl.setRoot(ProductPage);
       console.log(data);
     }, (error) => {
+      alert(error);
       console.error(error);
     });
   }

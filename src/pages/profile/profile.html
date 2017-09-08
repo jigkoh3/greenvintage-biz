@@ -15,7 +15,7 @@
       <ion-avatar item-left>
         <ion-icon name="call"></ion-icon>
       </ion-avatar>
-      <span class="detail-text" *ngIf="!edittel">0961345046</span>
+      <span class="detail-text" *ngIf="!edittel">{{tel}}</span>
       <ion-input type="text" placeholder="tel" *ngIf="edittel" [(ngModel)]="tel"></ion-input>
       <span class="edit-btn">
         <ion-icon name="build" (click)="editTel()" *ngIf="!edittel"></ion-icon>
@@ -26,11 +26,11 @@
       <ion-avatar item-left>
         <ion-icon name="mail"></ion-icon>
       </ion-avatar>
-      <span class="detail-text" *ngIf="!editemail">coffee01@gmail.com</span>
-      <ion-input type="text" placeholder="email" *ngIf="editemail" [(ngModel)]="email"></ion-input>
+      <span class="detail-text" *ngIf="!editemail">{{email}}</span>
+      <ion-input type="text" style="width:46px" placeholder="email" *ngIf="editemail" [(ngModel)]="email"></ion-input>
       <span class="edit-btn">
-        <ion-icon name="build" (click)="editMail()" *ngIf="!editemail"></ion-icon>
-        <ion-icon name="checkmark" (click)="saveEmail()" *ngIf="editemail"></ion-icon>
+        <ion-icon name="build" *ngIf="!editemail" (click)="editEmail()"></ion-icon>
+        <ion-icon name="checkmark" *ngIf="editemail" (click)="saveEmail()"></ion-icon>
       </span>
     </ion-item>
   </ion-list>

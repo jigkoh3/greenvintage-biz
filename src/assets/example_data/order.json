@@ -90,7 +90,11 @@
                 "_id": "59af742be20930c8298b14fa",
                 "status": "waiting"
             }
-        ]
+        ],
+        "amount": 1234,
+        "discount": 234,
+        "totalamount": 1000,
+        "cart": "59af742ae20930c8298b14f7"
     },
     {
         "_id": "59af742be20930c8298b14f9",
@@ -183,7 +187,11 @@
                 "_id": "59af742be20930c8298b14fa",
                 "status": "waiting"
             }
-        ]
+        ],
+        "amount": 1234,
+        "discount": 234,
+        "totalamount": 1000,
+        "cart": "59af742ae20930c8298b14f7"
     },
     {
         "_id": "59af742be20930c8298b14f9",
@@ -276,7 +284,11 @@
                 "_id": "59af742be20930c8298b14fa",
                 "status": "accept"
             }
-        ]
+        ],
+        "amount": 1234,
+        "discount": 234,
+        "totalamount": 1000,
+        "cart": "59af742ae20930c8298b14f7"
     },
     {
         "_id": "59af742be20930c8298b14f9",
@@ -369,6 +381,10 @@
                 "_id": "59af742be20930c8298b14fa",
                 "status": "reject"
             }
-        ]
+        ],
+        "amount": 1234,
+        "discount": 234,
+        "totalamount": 1000,
+        "cart": "59af742ae20930c8298b14f7"
     }
 ]

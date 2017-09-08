@@ -5,9 +5,22 @@ export class OrderDetailModel {
     shipping: Shipping = new Shipping();
     user: UserModel = new UserModel();
     items: Array<Items>;
-
-
+    amount: number;
+    discount: number;
+    totalamount: number;
+    cart: string;
+    payment: payment = new payment();
 }
+
+export class payment {
+    paymenttype: string;
+    counterservice: string;
+    creditno: string;
+    creditname: string;
+    expdate: string;
+    creditcvc: string;
+}
+
 export class Items {
     _id: string;
     delivery: Delivery = new Delivery();

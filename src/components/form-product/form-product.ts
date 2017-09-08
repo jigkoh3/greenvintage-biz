@@ -19,7 +19,7 @@ export class FormProductComponent {
 
   @Output() ProductForm: EventEmitter<any> = new EventEmitter<any>();
   shipping: any = {};
-  image: string;
+  // image: string;
   public product: any = {
     shippings: []
   };
@@ -34,10 +34,14 @@ export class FormProductComponent {
     console.log(this.product);
   }
   createProducts() {
-    this.product.image = [];
-    this.product.image.push({ url: this.image });
+    // this.product.image = [];
+    // this.product.image.push({ url: this.image });
     this.ProductForm.emit(this.product);
     console.log(this.product);
     // alert(JSON.stringify(this.create.value));
+  }
+  uploadImage(e) {
+    this.product.image = e;
+    alert('test');
   }
 }
