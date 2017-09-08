@@ -22,7 +22,7 @@ export class ProductDetailPage {
   productdetailData: ProductDetailModel = new ProductDetailModel;
   constructor(private socialSharing: SocialSharing, public navCtrl: NavController, public navParams: NavParams, public productDetailService: ProductDetailServiceProvider) {
     this.product = navParams.get('title');
-    this.productID = navParams.get('_id');
+    this.productID = navParams.get('id');
   }
 
   ionViewDidLoad() {
@@ -34,7 +34,7 @@ export class ProductDetailPage {
       .getProductDetail(this.productID)
       .then((data) => {
         this.productdetailData = data;
-        console.log(this.productdetailData);
+        alert(JSON.stringify( this.productdetailData));
       }, (err) => {
         console.log(err);
       });

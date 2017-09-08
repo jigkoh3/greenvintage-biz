@@ -1,5 +1,5 @@
 export class ProductDetailModel {
-    _id: string;
+    id: string;
     name: string;
     detail: string;
     unitprice: number;

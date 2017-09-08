@@ -1,5 +1,5 @@
 {
-    "_id": "product001",
+    "id": "product001",
     "name":"Product1",
     "detail": "product1 detail",
     "price": 70,
