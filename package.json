@@ -30,6 +30,7 @@
         "@ionic-native/geolocation": "3.12.1",
         "@ionic-native/google-plus": "3.12.1",
         "@ionic-native/image-picker": "^3.12.1",
+        "@ionic-native/image-picker": "^3.12.1",
         "@ionic-native/image-picker": "^3.14.0",
         "@ionic-native/in-app-browser": "3.12.1",
         "@ionic-native/keyboard": "3.12.1",
@@ -126,7 +127,6 @@
                 "REVERSED_CLIENT_ID": "com.googleusercontent.apps.1092390853283-icg6lqtcg6k270de9c8tv3i7qehlqtor"
             },
             "com.synconset.imagepicker": {
-
                 "PHOTO_LIBRARY_USAGE_DESCRIPTION": "your usage message"
             },
             "com-badrit-base64": {}
