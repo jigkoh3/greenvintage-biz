@@ -33,7 +33,7 @@ export class ProductPage {
   }
   selectedItem(e) {
     console.log(e);
-    this.navCtrl.push(ProductDetailPage, { product_id: e });
+    this.navCtrl.push(ProductDetailPage, { _id: e });
   }
 
   createProduct() {

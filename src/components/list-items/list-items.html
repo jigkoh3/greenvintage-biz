@@ -12,7 +12,7 @@
     </ion-col>
   </ion-row>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="onClick(item.product_id)">
+    <button ion-item *ngFor="let item of items" (click)="onClick(item._id)">
           <ion-row>
             <ion-col no-padding width-33 class="magin-right-10-custom">
               <preload-image [ratio]="{w:1, h:1}" [src]="item.image"></preload-image>
