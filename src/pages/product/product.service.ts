@@ -21,9 +21,9 @@ export class ProductserviceProvider {
     console.log('Hello ProductserviceProvider Provider');
   }
   getData() : Promise<ProductModel> {
-    return this.http.get('./assets/example_data/productlist.json')
+    // return this.http.get('./assets/example_data/productlist.json')
     // this.user = JSON.parse(window.localStorage.getItem('user'));
-    // return this.http.get('https://greenvintage.herokuapp.com/api/productsbycategorybyshop/all/' + this.user.shop._id)
+    return this.http.get('https://greenvintage.herokuapp.com/api/productlistbytitle/all/')
       .toPromise()
       .then(resp => resp.json() as ProductModel)
       .catch(err => Promise.reject(err.message || err));

@@ -17,7 +17,9 @@ export class ProductDetailServiceProvider {
   
   }
   getProductDetail(productID): Promise<ProductDetailModel> {
-    return this.http.get('./assets/example_data/productdetail.json')
+    // return this.http.get('./assets/example_data/productdetail.json')
+   
+    return this.http.get('https://greenvintage.herokuapp.com/api/productmasters/'+productID)
       .toPromise()
       .then(response => response.json() as ProductDetailModel)
       .catch(this.handleError);
