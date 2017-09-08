@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "product_id": "59afd4fc235b1e10002a3c56",
+      "_id": "59afd4fc235b1e10002a3c56",
       "name": "product1",
       "detail": "product1 detail",
       "price": 70,
@@ -9,7 +9,7 @@
       "rate": 5
     },
     {
-      "product_id": "59afd4fc235b1e10002a3c57",
+      "_id": "59afd4fc235b1e10002a3c57",
       "name": "product2",
       "detail": "product1 detail2",
       "price": 259,
@@ -17,7 +17,7 @@
       "rate": 4
     },
     {
-      "product_id": "59afd4fc235b1e10002a3c58",
+      "_id": "59afd4fc235b1e10002a3c58",
       "name": "product3",
       "detail": "product1 detail3",
       "price": 400,
@@ -25,7 +25,7 @@
       "rate": 5
     },
     {
-      "product_id": "59afd4fc235b1e10002a3c59",
+      "_id": "59afd4fc235b1e10002a3c59",
       "name": "product4",
       "detail": "product1 detail4",
       "price": 899,
@@ -33,7 +33,7 @@
       "rate": 4
     },
     {
-      "product_id": "59afd4fc235b1e10002a3c56",
+      "_id": "59afd4fc235b1e10002a3c56",
       "name": "product5",
       "detail": "product1 detail5",
       "price": 900,

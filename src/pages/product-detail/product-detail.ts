@@ -22,7 +22,7 @@ export class ProductDetailPage {
   productdetailData: ProductDetailModel = new ProductDetailModel;
   constructor(private socialSharing: SocialSharing, public navCtrl: NavController, public navParams: NavParams, public productDetailService: ProductDetailServiceProvider) {
     this.product = navParams.get('title');
-    this.productID = navParams.get('product_id');
+    this.productID = navParams.get('_id');
   }
 
   ionViewDidLoad() {
