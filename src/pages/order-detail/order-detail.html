@@ -14,7 +14,7 @@
 
 
 <ion-content class="contact-card-content">
-  <topbar [dataTopBar]="orderdetailData.items.product"></topbar>
+  <topbar [dataTopBar]="orderdetailData"></topbar>
 
   <ion-list class="details-list">
     <ion-item class="detail-item">
@@ -25,7 +25,7 @@
           </h3>
         </ion-col>
         <ion-col width-65 text-right>
-          <h3>Price {{orderdetailData.items.product.price | number}} ฿</h3>
+          <h3>Price {{orderdetailData.price | number}} ฿</h3>
         </ion-col>
       </ion-row>
     </ion-item>
@@ -42,10 +42,10 @@
         <ion-icon name="md-car"></ion-icon> {{'Shipping' | translate}}</h3>
       <div>
 
-        <span class="detail-textHeader">จัดส่ง : {{orderdetailData.items.delivery.name}}</span>
-        <span class="detail-textHeader">  {{orderdetailData.items.delivery.detail}} </span>
-        <span class="detail-textHeader"> ค่าจัดส่ง {{orderdetailData.items.delivery.price}} บาท</span>
-        <span class="detail-textHeader"> ระยะเวลา {{orderdetailData.items.delivery.days}} วัน</span>
+        <span class="detail-textHeader">จัดส่ง : {{orderdetailData.delivery.name}}</span>
+        <span class="detail-textHeader">  {{orderdetailData.delivery.detail}} </span>
+        <span class="detail-textHeader"> ค่าจัดส่ง {{orderdetailData.delivery.price}} บาท</span>
+        <span class="detail-textHeader"> ระยะเวลา {{orderdetailData.delivery.days}} วัน</span>
 
 
       </div>
@@ -83,7 +83,6 @@
     <ion-col>
     </ion-col>
   </ion-row>-->
-  <button ion-button block *ngIf="statusTab !== 'return'" (click)="updateStatus(orderdetailData.items.status)">{{statusTab === 'waiting' ? 'Accept' : statusTab === 'accept' ? 'Sent': statusTab === 'sent' ? 'Complete':'Progress..'}}</button>
-  <button ion-button block color="danger" *ngIf="statusTab === 'waiting'" (click)="updateStatusReject()">Reject</button>
-
+  <button ion-button block *ngIf="orderdetailData.status !== 'return'" (click)="updateStatus(orderdetailData.status)">{{orderdetailData.status === 'waiting' ? 'Accept' : orderdetailData.status === 'accept' ? 'Sent': orderdetailData.status === 'sent' ? 'Complete':'Progress..'}}</button>
+  <button ion-button block color="danger" *ngIf="orderdetailData.status === 'waiting'" (click)="updateStatusReject()">Reject</button>
 </ion-footer>

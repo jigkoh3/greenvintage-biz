@@ -15,7 +15,7 @@ export class OrderdetailserviceProvider {
   constructor(public http: Http) {
     console.log('Hello OrderdetailserviceProvider Provider');
   }
-  getData(): Promise<OrderDetailModel> {
+  getData(orderID, itemID): Promise<OrderDetailModel> {
     return this.http.get('./assets/example_data/orderdetail.json')
       .toPromise()
       .then(resp => resp.json() as OrderDetailModel)

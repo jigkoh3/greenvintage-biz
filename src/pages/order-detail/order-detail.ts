@@ -15,22 +15,23 @@ import { OrderDetailModel } from "./order-detail.model";
   templateUrl: 'order-detail.html',
 })
 export class OrderDetailPage {
+  orderID: any;
+  itemID: any;
   orderdetailData: OrderDetailModel = new OrderDetailModel;
   indexItem: any = 0;
   statusTab: string = '';
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public orderdetailserviceProvider: OrderdetailserviceProvider, public alertCtrl: AlertController, public loading: LoadingController) {
-    this.orderdetailData = navParams.get('items');
+    this.orderID = navParams.get('order_id');
+    this.itemID = navParams.get('item_id');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad OrderDetailPage');
-    console.log(this.orderdetailData);
-    this.statusTab = this.orderdetailData.items.status;
-    // this.orderdetailserviceProvider.getData().then(data => {
-    //   this.orderdetailData = data;
-    //   console.log(data);
-    // })
+    this.orderdetailserviceProvider.getData(this.orderID,this.itemID).then(data => {
+      this.orderdetailData = data;
+      console.log(data);
+    })
   }
 
   showPrompt() {
@@ -53,7 +54,7 @@ export class OrderDetailPage {
         {
           text: 'Submit',
           handler: data => {
-            this.orderdetailData.items[this.indexItem].status = 'sent';
+            this.orderdetailData.status = 'sent';
             this.updateOrder(this.orderdetailData);
           }
         }
@@ -76,7 +77,7 @@ export class OrderDetailPage {
     if (status === 'accept') {
       this.showPrompt();
     } else {
-      this.orderdetailData.items.status = updateStatus;
+      this.orderdetailData.status = updateStatus;
       console.log(this.orderdetailData);
       this.updateOrder(this.orderdetailData);
     }
@@ -91,17 +92,17 @@ export class OrderDetailPage {
   }
 
   updateStatusReject() {
-    this.orderdetailData.items.status = 'reject';
+    this.orderdetailData.status = 'reject';
     // console.log(this.orderdetailData);
-    this.updateOrder(this.orderdetailData);
+    // this.updateOrder(this.orderdetailData);
   }
 
   updateOrder(data) {
-    // console.log(this.orderdetailData);
+    console.log(this.orderdetailData);
     let loading = this.loading.create();
     loading.present();
     this.orderdetailserviceProvider
-      .updateStatusOrder(this.orderdetailData, this.orderdetailData.items)
+      .updateStatusOrder(this.orderdetailData, this.orderdetailData)
       .then((data) => {
         this.navCtrl.pop();
         loading.dismiss();
