@@ -1,43 +1,43 @@
 <ion-header class="signup-header auth-header">
-  <ion-navbar>
-    <ion-title>{{'SIGN_UP' | translate}}</ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>{{'SIGN_UP' | translate}}</ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content class="signup-content auth-content">
-  <ion-slides>
-    <ion-slide>
-      <h2 class="auth-title">{{'CREATE_AN_ACCOUNT' | translate}}</h2>
-      <form class="signup-form auth-form" [formGroup]="signup">
-        <ion-item>
-          <ion-input type="text" placeholder="username" formControlName="username"></ion-input>
-        </ion-item>
-        <show-hide-container>
-          <ion-item>
-            <ion-input type="password" placeholder="Password" formControlName="password" show-hide-input></ion-input>
-          </ion-item>
-        </show-hide-container>
-        <show-hide-container>
-          <ion-item>
-            <ion-input type="password" placeholder="Confirm password" formControlName="confirm_password" show-hide-input></ion-input>
-          </ion-item>
-        </show-hide-container>
-        <ion-item>
-          <ion-input type="text" placeholder="firstname" formControlName="firstName"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="text" placeholder="lastname" formControlName="lastName"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="email" placeholder="email" formControlName="email"></ion-input>
-        </ion-item>
-        <ion-item>
-          <ion-input type="text" placeholder="tel" formControlName="tel"></ion-input>
-        </ion-item>
-        <button ion-button block class="auth-action-button signup-button" (click)="goToNextStep2()" [disabled]="!signup.valid">NEXT</button>
-      </form>
-    </ion-slide>
-    <ion-slide>
+    <ion-slides>
+        <ion-slide>
+            <h2 class="auth-title">{{'CREATE_AN_ACCOUNT' | translate}}</h2>
+            <form class="signup-form auth-form" [formGroup]="signup">
+                <ion-item>
+                    <ion-input type="text" placeholder="username" formControlName="username"></ion-input>
+                </ion-item>
+                <show-hide-container>
+                    <ion-item>
+                        <ion-input type="password" placeholder="Password" formControlName="password" show-hide-input></ion-input>
+                    </ion-item>
+                </show-hide-container>
+                <show-hide-container>
+                    <ion-item>
+                        <ion-input type="password" placeholder="Confirm password" formControlName="confirm_password" show-hide-input></ion-input>
+                    </ion-item>
+                </show-hide-container>
+                <ion-item>
+                    <ion-input type="text" placeholder="firstname" formControlName="firstName"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="lastname" formControlName="lastName"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="email" placeholder="email" formControlName="email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-input type="text" placeholder="tel" formControlName="tel"></ion-input>
+                </ion-item>
+                <button ion-button block class="auth-action-button signup-button" (click)="doSignup()" [disabled]="!signup.valid">NEXT</button>
+            </form>
+        </ion-slide>
+        <!-- <ion-slide>
       <h2 class="auth-title">Create Store</h2>
       <ion-item>
         <ion-input type="text" placeholder="store name" [(ngModel)]="shop.name"></ion-input>
@@ -46,7 +46,7 @@
           <ion-textarea rows="7" placeholder="detail" [(ngModel)]="shop.detail"></ion-textarea>
       </ion-item>
       <button ion-button block class="auth-action-button signup-button" style="margin-top:26px" (click)="doSignup()">Sing Up</button>
-    </ion-slide>
+    </ion-slide> -->
 
-  </ion-slides>
+    </ion-slides>
 </ion-content>

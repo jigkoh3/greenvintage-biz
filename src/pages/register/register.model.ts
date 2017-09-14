@@ -5,5 +5,5 @@ export class AuthorizeModel {
     email:string;
     username:string;
     password: string;
-    shop: any;
+    // shop: any;
 }
