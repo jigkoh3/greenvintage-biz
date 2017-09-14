@@ -95,9 +95,11 @@ import { FormProductComponent } from '../components/form-product/form-product';
 import { CreateProductServiceProvider } from "../pages/create-product/create-product.service";
 import { ImagesLayoutUploadXComponent } from "../components/images-layout-upload-x/images-layout-upload-x";
 import { Base64 } from "@ionic-native/base64";
+import { ShopFormPage } from '../pages/shop-form/shop-form';
+import { ShopFormServiceProvider } from '../pages/shop-form/shop-form.service';
 
 export function createTranslateLoader(http: Http) {
-	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -137,23 +139,24 @@ export function createTranslateLoader(http: Http) {
     ListNotificationComponent,
     CreateProductPage,
     FormProductComponent,
-    ImagesLayoutUploadXComponent
-    
+    ImagesLayoutUploadXComponent,
+    ShopFormPage
+
   ],
   imports: [
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp),
     Ionic2RatingModule,
-		TranslateModule.forRoot({
-    loader: {
+    TranslateModule.forRoot({
+      loader: {
         provide: TranslateLoader,
-      	useFactory: (createTranslateLoader),
+        useFactory: (createTranslateLoader),
         deps: [Http]
-		    }
-		}),
-		VideoPlayerModule,
-		ValidatorsModule
+      }
+    }),
+    VideoPlayerModule,
+    ValidatorsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -173,17 +176,18 @@ export function createTranslateLoader(http: Http) {
     LoginPage,
     RegisterPage,
     OrderDetailPage,
-    CreateProductPage
+    CreateProductPage,
+    ShopFormPage
   ],
   providers: [
     HomeService,
     CartService,
     // GoogleMapsService,
-		LanguageService,
+    LanguageService,
     LoginServiceProvider,
     RegisterServiceProvider,
-	  SplashScreen,
-	  StatusBar,
+    SplashScreen,
+    StatusBar,
     SocialSharing,
     NativeStorage,
     InAppBrowser,
@@ -193,19 +197,20 @@ export function createTranslateLoader(http: Http) {
     Geolocation,
     Base64,
     TwitterConnect,
-		AdMobFree,
-		AppRate,
-		ImagePicker,
-		Crop,
-		EmailComposer,
+    AdMobFree,
+    AppRate,
+    ImagePicker,
+    Crop,
+    EmailComposer,
     ProductserviceProvider,
     ProductDetailServiceProvider,
     NotificationServiceProvider,
     OrderServiceProvider,
     ProfileServiceProvider,
     OrderdetailserviceProvider,
-    CreateProductServiceProvider
+    CreateProductServiceProvider,
+    ShopFormServiceProvider
   ],
-  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class AppModule {}
+export class AppModule { }

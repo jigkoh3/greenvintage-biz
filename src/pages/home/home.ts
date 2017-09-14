@@ -1,9 +1,10 @@
 import { Component, ViewChild } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
 import { Chart } from 'chart.js';
 import { HomeService } from "./home.service";
 import { HomeModel } from "../home/home.model";
-
+// import { ShopModel } from "../shop-form/shop-form.model";
+// import { ShopFormPage } from '../shop-form/shop-form';
 /**
  * Generated class for the HomePage page.
  *
@@ -30,10 +31,19 @@ export class HomePage {
   @ViewChild('lineCanvas') lineCanvas;
   doughnutChart: any;
   lineChart: any;
+  user: any;
+  // shop: ShopModel = new ShopModel();
   constructor(public navCtrl: NavController, public navParams: NavParams, public homeService: HomeService) {
+
+    this.user = navParams.get('data');
+    
   }
 
+
   ionViewDidLoad() {
+    // console.log(this.shop);
+    // this.shop
+
     console.log('ionViewDidLoad HomePage');
     this.homeService.getData().then(data => {
       this.homeData = data;
@@ -106,7 +116,7 @@ export class HomePage {
             }
           ]
         }
-  
+
       });
     })
   }

@@ -5,6 +5,7 @@ import { Validators, FormGroup, FormControl } from '@angular/forms';
 import { AuthorizeModel } from "./register.model";
 import { RegisterServiceProvider } from "./register.service";
 import { TabsNavigationPage } from "../tabs-navigation/tabs-navigation";
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the RegisterPage page.
@@ -35,21 +36,21 @@ export class RegisterPage {
   }
 
   ionViewDidLoad() {
-    this.slides.lockSwipeToNext(true);
-    this.slides.lockSwipeToPrev(true);
+    // this.slides.lockSwipeToNext(true);
+    // this.slides.lockSwipeToPrev(true);
   }
 
-  goToNextStep2() {
-    this.slides.lockSwipeToNext(false);
-    this.slides.slideNext();
-    this.slides.lockSwipeToNext(true);
-  }
+  // goToNextStep2() {
+  //   this.slides.lockSwipeToNext(false);
+  //   this.slides.slideNext();
+  //   this.slides.lockSwipeToNext(true);
+  // }
 
   doSignup() {
     this.userInfo = this.signup.value;
-    this.userInfo.shop = this.shop;
+    // this.userInfo.shop = this.shop;
     this.regisService.newAuthorization(this.userInfo).then((data) => {
-      this.navCtrl.setRoot(TabsNavigationPage);
+      this.navCtrl.setRoot(TabsNavigationPage, { data: data });
     }, (error) => {
       console.error(error);
     });
