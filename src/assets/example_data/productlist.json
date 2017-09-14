@@ -5,6 +5,9 @@
       "name": "product1",
       "detail": "product1 detail",
       "price": 70,
+      "promotionprice": 45,
+      "percentofdiscount": 10,
+      "currency" : "THB",
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
       "rate": 5
     },
@@ -13,6 +16,9 @@
       "name": "product2",
       "detail": "product1 detail2",
       "price": 259,
+      "promotionprice": 45,
+      "percentofdiscount": 10,
+      "currency" : "THB",
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
       "rate": 4
     },
@@ -21,6 +27,9 @@
       "name": "product3",
       "detail": "product1 detail3",
       "price": 400,
+      "promotionprice": 45,
+      "percentofdiscount": 10,
+      "currency" : "THB",
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
       "rate": 5
     },
@@ -29,6 +38,9 @@
       "name": "product4",
       "detail": "product1 detail4",
       "price": 899,
+      "promotionprice": 45,
+      "percentofdiscount": 10,
+      "currency" : "THB",
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
       "rate": 4
     },
@@ -37,6 +49,9 @@
       "name": "product5",
       "detail": "product1 detail5",
       "price": 900,
+      "promotionprice": 45,
+      "percentofdiscount": 10,
+      "currency" : "THB",
       "image": "http://www.sportsdirect.com/images/marketing/nikelanding-tainers.jpg",
       "rate": 5
     }

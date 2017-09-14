@@ -51,7 +51,6 @@ import { EmailComposer } from '@ionic-native/email-composer';
 
 import { VideoPlayerModule } from '../components/video-player/video-player.module';
 import { ValidatorsModule } from '../components/validators/validators.module';
-
 import { LanguageService } from '../providers/language/language.service';
 import { SearchPage } from "../pages/search/search";
 import { CartPage } from "../pages/cart/cart";
@@ -95,7 +94,8 @@ import { FormProductComponent } from '../components/form-product/form-product';
 import { CreateProductServiceProvider } from "../pages/create-product/create-product.service";
 import { ImagesLayoutUploadXComponent } from "../components/images-layout-upload-x/images-layout-upload-x";
 import { Base64 } from "@ionic-native/base64";
-
+import { ReviewComponent } from "../components/review/review";
+import { MomentPipe } from '../pipes/moment/moment';
 export function createTranslateLoader(http: Http) {
 	return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -137,7 +137,9 @@ export function createTranslateLoader(http: Http) {
     ListNotificationComponent,
     CreateProductPage,
     FormProductComponent,
-    ImagesLayoutUploadXComponent
+    ImagesLayoutUploadXComponent,
+    ReviewComponent,
+    MomentPipe
     
   ],
   imports: [
