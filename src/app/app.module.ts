@@ -98,6 +98,8 @@ import { ReviewComponent } from "../components/review/review";
 import { MomentPipe } from '../pipes/moment/moment';
 import { ShopFormPage } from '../pages/shop-form/shop-form';
 import { ShopFormServiceProvider } from '../pages/shop-form/shop-form.service';
+import { ProductFormServiceProvider } from "../pages/product-form/product-form-service";
+import { ProductFormPage } from "../pages/product-form/product-form";
 export function createTranslateLoader(http: Http) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
@@ -142,7 +144,8 @@ export function createTranslateLoader(http: Http) {
     ImagesLayoutUploadXComponent,
     ReviewComponent,
     MomentPipe,
-    ShopFormPage
+    ShopFormPage,
+    ProductFormPage
   ],
   imports: [
     BrowserModule,
@@ -178,7 +181,8 @@ export function createTranslateLoader(http: Http) {
     RegisterPage,
     OrderDetailPage,
     CreateProductPage,
-    ShopFormPage
+    ShopFormPage,
+    ProductFormPage
   ],
   providers: [
     HomeService,
@@ -210,7 +214,8 @@ export function createTranslateLoader(http: Http) {
     ProfileServiceProvider,
     OrderdetailserviceProvider,
     CreateProductServiceProvider,
-    ShopFormServiceProvider
+    ShopFormServiceProvider,
+    ProductFormServiceProvider
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })

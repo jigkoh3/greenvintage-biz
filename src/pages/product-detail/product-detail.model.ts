@@ -1,84 +1,30 @@
+import { ProductItemModel, ReviewsModel, QuestionModel } from "../../app/app.model";
+import { ShopModel } from '../shop-form/shop-form.model';
 export class ProductDetailModel {
-    id: string;
+    _id: string;
     name: string;
     detail: string;
-    unitprice: number;
-    image: Array<ImgsModel>;
-    review: Array<ReviewsModel>;
-    rate: number;
-    qa: Array<QASModel>;
-    promotions: Array<PromotionsModel>;
-    qty: number;
-    issize: boolean;
-    size: ProductDataSize = new ProductDataSize();
-    shipping: Array<ShippingModel>;
-    shopseller: string;
-    relationProducts: Array<RelationProductsModel>;
-    selectedsize: string;
-    title: string;
+    price: number;
+    promotionprice: number; //calculate from active promotions
+    percentofdiscount: number; //calculate from active promotions
+    currency: string;
+    images: Array<string>;
+    rate: number; // calculate from reviews
+    reviews: Array<ReviewsModel>; // relate of Reviews
+    shippings: Array<ShippingMethodModel>;
+    shop: ShopModel = new ShopModel();
+    otherproducts: Array<ProductItemModel>; //display if not signin
 }
+
 
 export class ProductDataSize {
+    _id: string;
     detail: string;
-    sizedetail: Array<SizeDetailModel>;
+    sizedetail: Array<string>;
 }
 
-export class ImgsModel {
-    url: string;
-    id: string;
-}
-
-export class ReviewsModel {
-    comment: string;
-    rate: number;
-}
-
-export class QASModel {
-    question: string;
-    answer: number;
-}
-
-export class PromotionsModel {
-    name: string;
-    desc: string;
-    code: string;
-}
-
-// export class StockvalueModel {
-//     in: number;
-//     out: number;
-// }
-
-export class SizeDetailModel {
+export class ShippingMethodModel {
+    _id: string;
     name: string;
 }
 
-// export class CategoryModel {
-//     name: string;
-//     desc: string;
-//     subcategory: Array<SubcategoryModel>;
-// }
-
-// export class SubcategoryModel {
-//     name: string;
-//     desc: string;
-// }
-
-// export class PaymentModel {
-//     payment: string;
-// }
-
-export class ShippingModel {
-    shipping: string;
-}
-
-export class RelationProductsModel {
-    name: string;
-    img: string;
-    unitprice: number;
-}
-// ////////////////to use/////////////////////
-// export class ProductModel {
-//     product: ProductItemsModel = new ProductItemsModel();
-// }
-// ///////////////////////////////////////////
